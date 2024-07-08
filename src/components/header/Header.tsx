@@ -6,7 +6,7 @@ import MobileNav from "../navbar/MobileNav";
 
 export default function Header() {
    return (
-      <header className="w-full bg-transparent hover:bg-white flex justify-between items-center sticky p-6 transition-[background] ">
+      <header className="w-full bg-transparent hover:bg-white flex justify-between items-center fixed p-6 transition-[background] ">
          <DesktopNav />
          <MobileNav />
       </header>
