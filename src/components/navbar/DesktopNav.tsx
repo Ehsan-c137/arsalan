@@ -27,6 +27,12 @@ export default function DesktopNav() {
                <li>About us</li>
             </Link>
             <Link
+               href="/collections"
+               className="hover:text-red-500 transition-colors duration-400"
+            >
+               <li>Collections</li>
+            </Link>
+            <Link
                href="/shop"
                className="hover:text-red-500 transition-colors duration-400"
             >
