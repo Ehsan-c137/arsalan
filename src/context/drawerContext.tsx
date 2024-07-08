@@ -5,7 +5,7 @@ import { useState } from "react";
 
 interface IDrawer {
    isOpen: boolean;
-   setIsOpen: (value: boolean) => void;
+   setIsOpen: (prevState: any) => void;
 }
 
 const DrawerContext = createContext<IDrawer | null>(null);
