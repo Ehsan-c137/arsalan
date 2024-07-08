@@ -17,19 +17,19 @@ export default function Footer() {
                <div className="flex flex-col lg:flex-row lg:gap-8 items-start lg:items-center gap-4">
                   <Link
                      href={"/shop"}
-                     className="text-white text-xl font-bold hover:opacity-75 duration-500"
+                     className="text-white text-xl font-medium hover:opacity-75 duration-500"
                   >
                      shop
                   </Link>
                   <Link
                      href={"/about-us"}
-                     className="text-white text-xl font-bold hover:opacity-75 duration-500"
+                     className="text-white text-xl font-medium hover:opacity-75 duration-500"
                   >
                      About us
                   </Link>
                   <Link
                      href={"/contact-us"}
-                     className="text-white text-xl font-bold hover:opacity-75 duration-500"
+                     className="text-white text-xl font-medium hover:opacity-75 duration-500"
                   >
                      Contact us
                   </Link>
