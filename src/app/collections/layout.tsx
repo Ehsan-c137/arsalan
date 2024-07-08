@@ -13,7 +13,7 @@ export default function CollectionsFilter({
       },
    ];
    return (
-      <div className="flex flex-col">
+      <div className="flex flex-col pt-28">
          <div
             style={{
                borderTop: "1px solid #f5f5f5",
