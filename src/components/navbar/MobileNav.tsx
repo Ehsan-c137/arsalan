@@ -12,7 +12,7 @@ export default function MobileNav() {
 
    return (
       <>
-         <div className="flex justify-between w-full lg:hidden">
+         <div className="flex justify-between items-center w-full lg:hidden">
             <div
                className="flex gap-4"
                onClick={() => setIsOpen(!isOpen)}
