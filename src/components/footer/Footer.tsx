@@ -14,7 +14,7 @@ export default function Footer() {
                      Technology of coffee & <br /> tea
                   </p>
                </div>
-               <div className="flex flex-col lg:flex-row lg:gap-8 items-center gap-4">
+               <div className="flex flex-col lg:flex-row lg:gap-8 items-start lg:items-center gap-4">
                   <Link
                      href={"/shop"}
                      className="text-white text-xl font-bold hover:opacity-75 duration-500"
