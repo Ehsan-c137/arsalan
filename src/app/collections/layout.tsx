@@ -52,8 +52,8 @@ export default function CollectionsFilter({
                Smart Air Fryer & Oven, App-Controlled with Recipe Book
             </p>
          </div>
-         <div className="flex  gap-10 pl-10 pt-10 lg:min-w-[1228px] max-w-[1228px] ml-auto mr-auto">
-            <div className="pl-8 pr-8 pb-8">
+         <div className="flex  gap-10 pt-10 lg:min-w-[1228px] max-w-[1228px] ml-auto mr-auto">
+            <div className=" pr-8 pb-8">
                {shopItems.map((item) => (
                   <Accordion
                      key={item.heading}
