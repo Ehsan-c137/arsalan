@@ -1,10 +1,33 @@
+"use client";
+
 import Accordion from "@/components/Accordion/Accordion";
+import { Swiper, SwiperSlide, SwiperRef } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 
 export default function Page() {
    return (
       <div className="min-h-[100vh] pt-28 px-10">
          <div className="grid grid-cols-7 gap-10">
-            <div className="col-span-4 bg-yellow-200">asdf</div>
+            <div className="col-span-4 bg-yellow-200">
+               <Swiper
+                  className="w-full h-full"
+                  spaceBetween={50}
+                  slidesPerView={2}
+                  navigation
+                  pagination={{ clickable: true }}
+                  onSlideChange={() => console.log("slide change")}
+                  onSwiper={(swiper) => console.log(swiper)}
+               >
+                  <SwiperSlide>Slide 1</SwiperSlide>
+                  <SwiperSlide>Slide 2</SwiperSlide>
+                  <SwiperSlide>Slide 3</SwiperSlide>
+                  <SwiperSlide>Slide 4</SwiperSlide>
+                  ...
+               </Swiper>
+            </div>
             <div className="col-span-3 space-y-5">
                <h1 className="text-4xl font-semibold ">
                   Bread Maker Kneading Paddles
