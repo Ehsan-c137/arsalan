@@ -28,18 +28,35 @@ export default function Accordion({
                } border-[#c1c1c2] focus:outline-none`}
                onClick={() => setIsOpen(!isOpen)}
             >
-               <div className="flex items-center justify-between h-20 px-3 font-semibold">
+               <div
+                  className={`flex items-center justify-between px-3 ${
+                     isLayout ? "h-20" : "h-12"
+                  } font-semibold`}
+               >
                   <span className="truncate">{heading}</span>
                   <div className="font-light">
-                     {isOpen ? <MinusIcon /> : <PlusIcon />}
+                     {isLayout && (
+                        <div>{isOpen ? <MinusIcon /> : <PlusIcon />}</div>
+                     )}
+                     {!isLayout && (
+                        <div
+                           className={`${
+                              isOpen ? "rotate-45" : "rotate-0"
+                           } duration-300`}
+                        >
+                           <PlusIcon />
+                        </div>
+                     )}
                   </div>
                </div>
                <div
-                  className={`overflow-hidden duration-500`}
+                  className={`overflow-hidden transition-[max-height] duration-500 px-3 ${
+                     !isLayout ? "text-left" : ""
+                  }`}
                   onClick={(e) => e.stopPropagation()}
                   style={{
-                     paddingBottom: "8px",
-                     marginTop: "-8px",
+                     paddingBottom: isLayout ? "8px" : "0px",
+                     marginTop: isLayout ? "-8px" : "0px",
                      maxHeight: isOpen ? "25rem" : "0rem",
                   }}
                >
