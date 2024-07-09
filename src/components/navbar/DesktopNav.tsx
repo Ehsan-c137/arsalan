@@ -14,12 +14,6 @@ export default function DesktopNav() {
                href="/products"
                className="hover:text-red-500 transition-colors duration-400"
             >
-               <li>produdcts</li>
-            </Link>
-            <Link
-               href="/shop"
-               className="hover:text-red-500 transition-colors duration-400"
-            >
                <li>Shop</li>
             </Link>
             <Link
@@ -27,12 +21,6 @@ export default function DesktopNav() {
                className="hover:text-red-500 transition-colors duration-400"
             >
                <li>Support</li>
-            </Link>
-            <Link
-               href="/shop"
-               className="hover:text-red-500 transition-colors duration-400"
-            >
-               <li>About us</li>
             </Link>
             <Link
                href="/collections"
