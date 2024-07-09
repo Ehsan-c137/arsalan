@@ -21,7 +21,7 @@ export default function Accordion({ children, isLast, heading }: IAccordion) {
                } border-[#c1c1c2] focus:outline-none`}
                onClick={() => setIsOpen(!isOpen)}
             >
-               <div className="flex items-center justify-between h-12 px-3 font-semibold">
+               <div className="flex items-center justify-between h-20 px-3 font-semibold">
                   <span className="truncate">{heading}</span>
                   <div className="font-light">
                      {isOpen ? <MinusIcon /> : <PlusIcon />}
