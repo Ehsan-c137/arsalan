@@ -31,6 +31,14 @@ const shopItems = [
       isLast: true,
    },
 ];
+
+const layoutHeader = [
+   {
+      pathname: "/collections/products",
+      title: "ARSALAN products",
+   },
+];
+
 export default function CollectionsFilter({
    children,
 }: {
@@ -49,7 +57,9 @@ export default function CollectionsFilter({
             className="py-12 flex justify-center border-[black] font-semibold text-2xl"
          >
             <p className="max-w-[1228px] w-full ml-auto mr-auto">
-               Smart Air Fryer & Oven, App-Controlled with Recipe Book
+               {pathname === "/collections/products"
+                  ? "ARSALAN products"
+                  : "Smart Air Fryer & Oven, App-Controlled with Recipe Book"}
             </p>
          </div>
          <div className="flex  gap-10 pt-10 lg:min-w-[1228px] max-w-[1228px] ml-auto mr-auto">
