@@ -11,22 +11,16 @@ export default function DesktopNav() {
          </Link>
          <ul className="flex items-center gap-12">
             <Link
-               href="/products"
+               href="/collections"
                className="hover:text-red-500 transition-colors duration-400"
             >
                <li>Shop</li>
             </Link>
             <Link
-               href="/shop"
+               href="/support"
                className="hover:text-red-500 transition-colors duration-400"
             >
                <li>Support</li>
-            </Link>
-            <Link
-               href="/collections"
-               className="hover:text-red-500 transition-colors duration-400"
-            >
-               <li>Collections</li>
             </Link>
             <Link
                href="/shop"
