@@ -8,13 +8,20 @@ interface IAccordion {
    children: React.ReactNode;
    isLast?: boolean;
    heading: string;
+   isLayout?: boolean;
 }
-export default function Accordion({ children, isLast, heading }: IAccordion) {
+export default function Accordion({
+   children,
+   isLast,
+   heading,
+   isLayout,
+   ...props
+}: IAccordion) {
    const [isOpen, setIsOpen] = useState(false);
 
    return (
       <>
-         <div className="flex flex-col w-56">
+         <div className={`flex flex-col ${isLayout ? "w-56" : "w-full"}`}>
             <button
                className={`group border-t ${
                   isLast ? "border-b" : ""
@@ -31,7 +38,9 @@ export default function Accordion({ children, isLast, heading }: IAccordion) {
                   className={`overflow-hidden duration-500`}
                   onClick={(e) => e.stopPropagation()}
                   style={{
-                     maxHeight: isOpen ? "10rem" : "0rem",
+                     paddingBottom: "8px",
+                     marginTop: "-8px",
+                     maxHeight: isOpen ? "25rem" : "0rem",
                   }}
                >
                   {children}
