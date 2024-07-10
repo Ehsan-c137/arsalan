@@ -3,9 +3,11 @@ import Image from "next/image";
 
 interface IItem {
    title: string;
+   price: string;
+   imgSrc: string;
 }
 
-export default function CollectionsItem() {
+export default function CollectionsItem({ imgSrc, title, price }: IItem) {
    return (
       <Link href={"/"} className="space-y-2 grid">
          <Image
