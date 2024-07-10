@@ -1,13 +1,14 @@
-import { Video } from "@/components/video/Video";
+import Video from "@/components/video/Video";
 import Image from "next/image";
 import Link from "next/link";
+import ProductsSwiper from "./ProductsSwiper";
 
 export function Landing() {
    return (
       <div className="flex flex-col w-full">
          <div className="hero h-[100vh] w-full flex items-end relative object-cover">
             <Video src="/videos/home-section-tea-maker-big.mp4" />
-            <div className="pb-[30px] lg:pb-[100px] pl-6 lg:pl-10 space-y-6 absolute z-50 text-white">
+            <div className="pb-[30px] lg:pb-[100px] pl-6 lg:pl-10 space-y-6 absolute z-40 text-white">
                <div className="space-y-2">
                   <p className="text-3xl">SAKI</p>
                   <p className="text-6xl">Turkish Tea Maker.</p>
@@ -220,7 +221,8 @@ export function Landing() {
                </div>
             </div>
             <div className="text-black h-full w-full col-span-1 flex items-center gap-4 overflow-x-hidden justify-center">
-               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+               <ProductsSwiper />
+               <div className=" grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 hidden md:grid">
                   <Link href="/products/pour-over-carafe">
                      <div className="bg-[#f5f5f7]  h-[300px] flex items-center justify-center">
                         <Image
