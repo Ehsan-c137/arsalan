@@ -6,7 +6,7 @@ import MobileNav from "../navbar/MobileNav";
 
 export default function Header() {
    return (
-      <header className="w-full bg-gray-500/15 hover:bg-white hover:text-black text-black flex justify-between items-center fixed top-0 p-6 transition-[background] z-50 ">
+      <header className="w-full flex justify-between items-center text-white fixed top-0 p-6 transition-[background] z-50 ">
          <DesktopNav />
          <MobileNav />
       </header>
