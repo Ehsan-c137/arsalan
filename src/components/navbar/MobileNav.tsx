@@ -1,7 +1,7 @@
 "use client";
 
 import style from "./MobileNav.module.css";
-import logo from "/public/arsalan-logo.svg";
+import logo from "/public/arsalan-logo-dark.svg";
 import Image from "next/image";
 import { useDrawer } from "@/context/drawerContext";
 import DrawerComponent from "../Drawer/Drawer";
