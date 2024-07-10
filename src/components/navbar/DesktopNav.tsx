@@ -1,7 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import ShoppingCart from "@/assets/icons/shoppingCart";
-import logo from "/public/arsalan-logo.svg";
+import logoDark from "/public/arsalan-logo-dark.svg";
+import logo from "/public/arsalan-logo.png";
 
 export default function DesktopNav() {
    return (
@@ -12,14 +13,11 @@ export default function DesktopNav() {
          <ul className="flex items-center gap-12">
             <Link
                href="/collections"
-               className="hover:text-red-500 transition-colors duration-400"
+               className="transition-colors duration-400"
             >
                <li>Shop</li>
             </Link>
-            <Link
-               href="/support"
-               className="hover:text-red-500 transition-colors duration-400"
-            >
+            <Link href="/support" className="transition-colors duration-400">
                <li>Support</li>
             </Link>
          </ul>
