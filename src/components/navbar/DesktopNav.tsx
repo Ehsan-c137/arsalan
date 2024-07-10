@@ -22,14 +22,6 @@ export default function DesktopNav() {
             >
                <li>Support</li>
             </Link>
-            <Link
-               href="/shop"
-               className="hover:text-red-500 transition-colors duration-400"
-            >
-               <li>
-                  <ShoppingCart />
-               </li>
-            </Link>
          </ul>
       </nav>
    );
