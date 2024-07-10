@@ -1,14 +1,18 @@
 "use client";
 
 import style from "./MobileNav.module.css";
-import logo from "/public/arsalan-logo-dark.svg";
 import Image from "next/image";
 import { useDrawer } from "@/context/drawerContext";
 import DrawerComponent from "../Drawer/Drawer";
 import { useEffect } from "react";
-
+import { usePathname } from "next/navigation";
+import logoDark from "/public/arsalan-logo-dark.svg";
+import logo from "/public/arsalan-logo.png";
 export default function MobileNav() {
    const { isOpen, setIsOpen } = useDrawer();
+   const pathname = usePathname();
+   const headerLogo = pathname === "/" ? logo : logoDark;
+
    useEffect(() => {
       if (isOpen) {
          document.body.style.height = "100vh";
@@ -42,7 +46,7 @@ export default function MobileNav() {
             </div>
 
             <DrawerComponent />
-            <Image src={logo} alt="logo" width={150} />
+            <Image src={headerLogo} alt="logo" width={150} />
          </div>
       </>
    );
