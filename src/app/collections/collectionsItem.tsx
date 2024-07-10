@@ -9,7 +9,7 @@ interface IItem {
 
 export default function CollectionsItem({ imgSrc, title, price }: IItem) {
    return (
-      <Link href={"/"} className="space-y-2 grid">
+      <Link href={"/"} className="space-y-2 grid bg-[#f5f5f7]">
          <Image
             src={"/"}
             alt=""
