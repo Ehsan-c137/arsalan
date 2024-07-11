@@ -1,7 +1,7 @@
 "use client";
 
 import Accordion from "@/components/Accordion/Accordion";
-import { Swiper, SwiperSlide, SwiperRef } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -33,9 +33,6 @@ export default function Page() {
                   Bread Maker Kneading Paddles
                </h1>
                <p className="text-4xl font-bold">$12</p>
-               <button className="rounded-full w-full bg-blue-500 hover:bg-blue-400 duration-300 font-semibold font-size-18px p-4 text-white">
-                  Add To Cart
-               </button>
                <div>
                   <Accordion heading="Description">
                      <p className="text-left">
