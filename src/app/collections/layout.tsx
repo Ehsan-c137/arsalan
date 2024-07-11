@@ -4,16 +4,18 @@ import React from "react";
 import Accordion from "@/components/Accordion/Accordion";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import path from "path";
+import { allProducts } from "@/constant";
 
 const shopItems = [
    {
       heading: "products",
       children: [
-         { name: "All", href: "products" },
-         { name: "Air Fryers", href: "air-fryers" },
-         { name: "Coffe makers", href: "coffe-makers" },
-         { name: "Ovens", href: "ovens" },
+         ...allProducts.map((item) => {
+            return {
+               name: item.category?.toLocaleLowerCase(),
+               href: item.url,
+            };
+         }),
       ],
    },
    {
@@ -62,8 +64,8 @@ export default function CollectionsFilter({
                   : "Smart Air Fryer & Oven, App-Controlled with Recipe Book"}
             </p>
          </div>
-         <div className="flex  gap-10 pt-10 lg:min-w-[1228px] max-w-[1228px] ml-auto mr-auto">
-            <div className=" pr-8 pb-8">
+         <div className="flex gap-10 pt-10 lg:min-w-[1228px] max-w-[1228px] ml-auto mr-auto">
+            <div className="pr-8 pb-8">
                {shopItems.map((item) => (
                   <Accordion
                      key={item.heading}
@@ -77,7 +79,7 @@ export default function CollectionsFilter({
 
                         return (
                            <p
-                              className={`flex items-center h-8 px-4 text-sm hover:text-red-600 transition-opacity ${
+                              className={`flex items-center h-8 px-4 text-sm hover:text-red-600 transition-opacity truncate ${
                                  isAcitve && "text-red-600"
                               }`}
                               onClick={() => {
