@@ -5,11 +5,12 @@ interface IItem {
    title: string;
    price: string;
    img: string;
+   url: string;
 }
 
-export default function CollectionsItem({ img, title, price }: IItem) {
+export default function CollectionsItem({ img, title, price, url }: IItem) {
    return (
-      <Link href={"/"} className="gap-2 flex flex-col w-[260px]">
+      <Link href={`${url}`} className="gap-2 flex flex-col w-[260px]">
          <Image
             src={img}
             alt={title}
