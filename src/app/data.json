@@ -1,0 +1,257 @@
+{
+   "products": [
+      {
+         "title": "Baristan Electric Gooseneck",
+         "price": "110",
+         "imgSrc": "/asdf"
+      },
+      {
+         "title": "Luna Electric Tea Kettle",
+         "price": "110",
+         "imgSrc": "/asdf"
+      },
+      {
+         "title": "Baristan Electric Gooseneck Kettle (open-box)",
+         "price": "95",
+         "imgSrc": "/asdfsadf"
+      },
+      {
+         "title": "Luna Adjustable Temperature Kettle (open-box)",
+         "price": "75",
+         "imgSrc": "/fasdf"
+      },
+      {
+         "title": "Turkish Tea Maker",
+         "price": "130",
+         "imgSrc": "/asdf"
+      },
+      {
+         "title": "Large Prcelain Teapot",
+         "price": "29",
+         "imgSrc": "/asdf"
+      },
+      {
+         "title": "TeaSmart Electric Turkish Tea Kettle (Open-Box)",
+         "price": "85",
+         "imgSrc": "/asdf"
+      },
+      {
+         "title": "Electric Russian Samovar",
+         "price": "165",
+         "imgSrc": "/asdf"
+      },
+      {
+         "title": "Turkish Coffee Maker",
+         "price": "75",
+         "imgSrc": "/asdf"
+      },
+      {
+         "title": "Pour-Over Glass Coffee",
+         "price": "30",
+         "imgSrc": "/asdf"
+      },
+      {
+         "title": "Bread Maker",
+         "price": "165",
+         "imgSrc": "/fasdf"
+      },
+      {
+         "title": "Bread Maker (Open-Box)",
+         "price": "95",
+         "imgSrc": "/asdf"
+      },
+
+      {
+         "title": "Smart Air Fryers, 5 Quart",
+         "price": "74",
+         "imgSrc": "/asdf"
+      },
+      {
+         "title": "Air Fryer Over, 13 Quart",
+         "price": "81",
+         "imgSrc": "/asdf"
+      },
+      {
+         "title": "AutoMatic Pot Stirrer",
+         "price": "51",
+         "imgSrc": "/asdf"
+      },
+      {
+         "title": "Smart Sous Vide Cooker",
+         "price": "70",
+         "imgSrc": "/afsdf"
+      },
+      {
+         "title": "HEPA H13 Air Purifier",
+         "price": "75",
+         "imgSrc": "/asdf"
+      }
+   ],
+   "parts": [
+      {
+         "title": "Removable Door",
+         "price": "15",
+         "imgSrc": "/asdf"
+      },
+      {
+         "title": "Rotisserie Rod & Forks",
+         "price": "12",
+         "imgSrc": "/asdf"
+      },
+      {
+         "title": "Removal Tool",
+         "price": "6",
+         "imgSrc": "/asdf"
+      },
+      {
+         "title": "Mesh Racks",
+         "price": "10",
+         "imgSrc": "/asdfa"
+      },
+      {
+         "title": "Rotisserie Skewers",
+         "price": "15",
+         "imgSrc": "/asdf"
+      },
+      {
+         "title": "Oil Drip Tray",
+         "price": "8",
+         "imgSrc": "/asdf"
+      },
+      {
+         "title": "Rotisserie Basket",
+         "price": "12",
+         "imgSrc": "/asdf"
+      },
+      {
+         "title": "Baristan Replacement Lid",
+         "price": "15",
+         "imgSrc": "/asdf"
+      },
+      {
+         "title": "Baristan Replacement Base",
+         "price": "15",
+         "imgSrc": "/asdf"
+      },
+      {
+         "title": "Baristan Replacement Body",
+         "price": "40",
+         "imgSrc": "/asdf"
+      },
+      {
+         "title": "َAir purifier Filter",
+         "price": "29",
+         "imgSrc": "/asdf"
+      },
+      {
+         "title": "Baristan Replacement Lid",
+         "price": "15",
+         "imgSrc": "/asdf"
+      },
+      {
+         "title": "Baristan Replacement Base",
+         "price": "15",
+         "imgSrc": "/asdf"
+      },
+      {
+         "title": "Baristan Replacement Body",
+         "price": "40",
+         "imgSrc": "/asdf"
+      },
+      {
+         "title": "Bread Maker Pan",
+         "price": "23",
+         "imgSrc": "/fasdf"
+      },
+      {
+         "title": "Bread Maker Kneading Paddles",
+         "price": "12",
+         "imgSrc": "/asdf"
+      },
+      {
+         "title": "Chaiovar Replacement Faucet",
+         "price": "15",
+         "imgSrc": "/asdf"
+      },
+      {
+         "title": "Chaiovar Replacement Teapot with Lid",
+         "price": "25",
+         "imgSrc": "/asdf"
+      },
+      {
+         "title": "Chaiovar Replacement Lid",
+         "price": "15",
+         "imgSrc": "/asdf"
+      },
+      {
+         "title": "Chaiovar Replacement Tea Infuser",
+         "price": "12",
+         "imgSrc": "/asdf"
+      },
+      {
+         "title": "Chaiovar Replacement Teapot Holder",
+         "price": "15",
+         "imgSrc": "/asdf"
+      },
+      {
+         "title": "Chaiovar Replacement Drip Tray",
+         "price": "15",
+         "imgSrc": "/asdf"
+      },
+      {
+         "title": "Samovar Teapot",
+         "price": "21",
+         "imgSrc": "/asdf"
+      },
+      {
+         "title": "Samovar Teapot Infuser",
+         "price": "11",
+         "imgSrc": "/asdf"
+      },
+      {
+         "title": "Luna Replacement Base",
+         "price": "45",
+         "imgSrc": "/asdf"
+      },
+      {
+         "title": "Luna Replacement Lid",
+         "price": "10",
+         "imgSrc": "/asdf"
+      },
+      {
+         "title": "Luna Replacement Body",
+         "price": "50",
+         "imgSrc": "/asdf"
+      },
+      {
+         "title": "Pour Over Mesh Filter",
+         "price": "12",
+         "imgSrc": "/asdf"
+      },
+      {
+         "title": "Tea Replacement Base",
+         "price": "60",
+         "imgSrc": "/asdf"
+      },
+      {
+         "title": "TeaSmart Replacement Teapot",
+         "price": "20",
+         "imgSrc": "/asdf"
+      },
+      {
+         "title": "TeaSmart Replacement Lid",
+         "price": "10",
+         "imgSrc": "/asdf"
+      },
+      {
+         "title": "TeaSmart Replacement Body",
+         "price": "50",
+         "imgSrc": "/asdf"
+      },
+      {
+         "title": "Tea Maker Infuser",
+         "price": "10",
+         "imgSrc": "/asdf"
+      }
+   ]
+}
