@@ -1,3 +1,12 @@
+import { IM_Fell_Great_Primer_SC } from "next/font/google";
+import { title } from "process";
+
+interface IItem {
+   title: string;
+   price: string;
+   imgSrc: string;
+}
+
 const electricKettels = [
    {
       title: "Baristan Electric Gooseneck",
@@ -154,3 +163,184 @@ const allProducts = [
 ];
 
 export { allProducts };
+// parts
+
+const AirFryerOven: IItem[] = [
+   {
+      title: "Removable Door",
+      price: "15",
+      imgSrc: "/asdf",
+   },
+   {
+      title: "Rotisserie Rod & Forks",
+      price: "12",
+      imgSrc: "/asdf",
+   },
+   {
+      title: "Removal Tool",
+      price: "6",
+      imgSrc: "/asdf",
+   },
+   {
+      title: "Mesh Racks",
+      price: "10",
+      imgSrc: "/asdfa",
+   },
+   {
+      title: "Rotisserie Skewers",
+      price: "15",
+      imgSrc: "/asdf",
+   },
+   {
+      title: "Oil Drip Tray",
+      price: "8",
+      imgSrc: "/asdf",
+   },
+   {
+      title: "Rotisserie Basket",
+      price: "12",
+      imgSrc: "/asdf",
+   },
+];
+
+const AirPurifier: IItem[] = [
+   {
+      title: "َAir purifier Filter",
+      price: "29",
+      imgSrc: "/asdf",
+   },
+];
+
+const BaristanKettle: IItem[] = [
+   {
+      title: "Baristan Replacement Lid",
+      price: "15",
+      imgSrc: "/asdf",
+   },
+   {
+      title: "Baristan Replacement Base",
+      price: "15",
+      imgSrc: "/asdf",
+   },
+   {
+      title: "Baristan Replacement Body",
+      price: "40",
+      imgSrc: "/asdf",
+   },
+];
+
+const BreadMaker: IItem[] = [
+   {
+      title: "Bread Maker Pan",
+      price: "23",
+      imgSrc: "/fasdf",
+   },
+   {
+      title: "Bread Maker Kneading Paddles",
+      price: "12",
+      imgSrc: "/asdf",
+   },
+];
+
+const ChaiovarSamovar: IItem[] = [
+   {
+      title: "Chaiovar Replacement Faucet",
+      price: "15",
+      imgSrc: "/asdf",
+   },
+   {
+      title: "Chaiovar Replacement Teapot with Lid",
+      price: "25",
+      imgSrc: "/asdf",
+   },
+   {
+      title: "Chaiovar Replacement Lid",
+      price: "15",
+      imgSrc: "/asdf",
+   },
+   {
+      title: "Chaiovar Replacement Tea Infuser",
+      price: "12",
+      imgSrc: "/asdf",
+   },
+   {
+      title: "Chaiovar Replacement Teapot Holder",
+      price: "15",
+      imgSrc: "/asdf",
+   },
+   {
+      title: "Chaiovar Replacement Drip Tray",
+      price: "15",
+      imgSrc: "/asdf",
+   },
+];
+
+const ElectricSamovarV1: IItem[] = [
+   {
+      title: "Samovar Teapot",
+      price: "21",
+      imgSrc: "/asdf",
+   },
+   {
+      title: "Samovar Teapot Infuser",
+      price: "11",
+      imgSrc: "/asdf",
+   },
+];
+
+const LunaKettle: IItem[] = [
+   {
+      title: "Luna Replacement Base",
+      price: "45",
+      imgSrc: "/asdf",
+   },
+   {
+      title: "Luna Replacement Lid",
+      price: "10",
+      imgSrc: "/asdf",
+   },
+   {
+      title: "Luna Replacement Body",
+      price: "50",
+      imgSrc: "/asdf",
+   },
+];
+
+const PourOverCoffeMaker: IItem[] = [
+   {
+      title: "Pour Over Mesh Filter",
+      price: "12",
+      imgSrc: "/asdf",
+   },
+];
+
+const TeaSmartTurkishTeaKettle: IItem[] = [
+   {
+      title: "Tea Replacement Base",
+      price: "60",
+      imgSrc: "/asdf",
+   },
+   {
+      title: "TeaSmart Replacement Teapot",
+      price: "20",
+      imgSrc: "/asdf",
+   },
+   {
+      title: "TeaSmart Replacement Lid",
+      price: "10",
+      imgSrc: "/asdf",
+   },
+   {
+      title: "TeaSmart Replacement Body",
+      price: "50",
+      imgSrc: "/asdf",
+   },
+];
+
+const TurkishTeaMaker: IItem[] = [
+   {
+      title: "Tea Maker Infuser",
+      price: "10",
+      imgSrc: "/asdf",
+   },
+];
