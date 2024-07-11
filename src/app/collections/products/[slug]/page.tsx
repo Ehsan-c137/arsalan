@@ -14,14 +14,18 @@ export default function Page(slug: pageProps) {
 
    return (
       <div className="flex flex-wrap gap-8">
-         {products?.items.map((item) => (
-            <CollectionsItem
-               key={item.title}
-               price={item.price}
-               title={item.title}
-               img={`${item.imgSrc}`}
-            />
-         ))}
+         {products?.items.map((item) => {
+            const url = item.title.replace(/ /g, "-");
+            return (
+               <CollectionsItem
+                  key={item.title}
+                  url={`/products/${url}`}
+                  price={item.price}
+                  title={item.title}
+                  img={`${item.imgSrc}`}
+               />
+            );
+         })}
       </div>
    );
 }
