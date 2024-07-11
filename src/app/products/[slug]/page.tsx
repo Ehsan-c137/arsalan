@@ -1,5 +1,7 @@
 "use client";
 
+import { usePathname } from "next/navigation";
+import data from "@/app/data.json";
 import Accordion from "@/components/Accordion/Accordion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -8,6 +10,15 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 export default function Page() {
+   const pathname = usePathname();
+   const url = pathname?.split("/").pop();
+
+   const product = data.products.find((p) => {
+      const path = p.title.replace(/ /g, "-").toLowerCase();
+      return path === url;
+   });
+
+   console.log(product);
    return (
       <div className="min-h-[100vh] pt-28 px-10">
          <div className="grid grid-cols-7 gap-10">
@@ -29,10 +40,8 @@ export default function Page() {
                </Swiper>
             </div>
             <div className="col-span-3 space-y-5">
-               <h1 className="text-4xl font-semibold ">
-                  Bread Maker Kneading Paddles
-               </h1>
-               <p className="text-4xl font-bold">$12</p>
+               <h1 className="text-4xl font-semibold">{product?.title}</h1>
+               <p className="text-4xl font-bold">${product?.price}</p>
                <div>
                   <Accordion heading="Description">
                      <p className="text-left">
