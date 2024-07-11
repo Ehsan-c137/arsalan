@@ -16,7 +16,7 @@ export default function Footer() {
                </div>
                <div className="flex flex-col lg:flex-row lg:gap-8 items-start lg:items-center gap-4">
                   <Link
-                     href={"/shop"}
+                     href={"/collections"}
                      className="text-white text-xl font-medium hover:opacity-75 duration-500"
                   >
                      shop
