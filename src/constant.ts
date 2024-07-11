@@ -162,7 +162,6 @@ const allProducts = [
    },
 ];
 
-export { allProducts };
 // parts
 
 const AirFryerOven: IItem[] = [
@@ -344,3 +343,60 @@ const TurkishTeaMaker: IItem[] = [
       imgSrc: "/asdf",
    },
 ];
+
+const allParts = [
+   {
+      category: "Air Fryer Oven",
+      items: AirFryerOven,
+      url: "air-fryer-oven",
+   },
+   {
+      category: "Air purifier",
+      items: AirPurifier,
+      url: "air-purifier",
+   },
+   {
+      category: "Baristan Kettle",
+      items: BaristanKettle,
+      url: "baristan-kettle",
+   },
+   {
+      category: "Bread Maker",
+      items: BreadMaker,
+      url: "bread-maker",
+   },
+   {
+      category: "Chaiovar Samovar",
+      items: ChaiovarSamovar,
+      url: "chaiovar-samovar",
+   },
+   {
+      category: "Electric Samovar V1",
+      items: ElectricSamovarV1,
+      url: "electric-samovar-v1",
+   },
+   {
+      category: "Luna Kettle",
+      items: LunaKettle,
+      url: "luna-kettle",
+   },
+   {
+      category: "Pour Over Coffee Maker",
+      items: PourOverCoffeMaker,
+      url: "pour-over-coffee-maker",
+   },
+   {
+      category: "Tea Smart Turkish Tea Kettle",
+      items: TeaSmartTurkishTeaKettle,
+      url: "tea-smart-turkish-tea-kettle",
+   },
+   {
+      category: "Turkish Tea Maker",
+      items: TurkishTeaMaker,
+      url: "turkish-tea-maker",
+   },
+];
+
+const data = [...allParts, ...allProducts];
+
+export { data, allParts, allProducts };
