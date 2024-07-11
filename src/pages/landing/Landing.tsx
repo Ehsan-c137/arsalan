@@ -220,11 +220,14 @@ export function Landing() {
                   </button>
                </div>
             </div>
-            <div className="text-black h-full w-full col-span-1 flex items-center gap-4 overflow-x-hidden justify-center">
+            <div className="text-black h-full w-full col-span-1 flex gap-4 overflow-x-hidden items-center justify-center">
                <ProductsSwiper />
-               <div className=" grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 hidden md:grid">
-                  <Link href="/products/pour-over-carafe">
-                     <div className="bg-[#f5f5f7]  h-[300px] flex items-center justify-center">
+               <div className="hidden grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 lg:grid">
+                  <Link
+                     href="/products/pour-over-carafe"
+                     className="min-w-[150px] min-h-[150px] max-w-[300px] max-h-[300px]"
+                  >
+                     <div className="bg-[#f5f5f7] w-full h-full flex items-center justify-center">
                         <Image
                            src={"/images/pour-over-carafe.webp"}
                            alt="pour over carafe"
@@ -233,8 +236,11 @@ export function Landing() {
                         />
                      </div>
                   </Link>
-                  <Link href={"/products/luna-precision-electric-kettle"}>
-                     <div className="bg-[#f5f5f7] w-[300px] h-[300px] flex items-center justify-center">
+                  <Link
+                     href={"/products/luna-precision-electric-kettle"}
+                     className="min-w-[150px] min-h-[150px] max-w-[300px] max-h-[300px]"
+                  >
+                     <div className="bg-[#f5f5f7] w-full h-full flex items-center justify-center">
                         <Image
                            src={"/images/baristan-electric-kettle.webp"}
                            alt="baristan-electric-kettle"
@@ -243,8 +249,11 @@ export function Landing() {
                         />
                      </div>
                   </Link>
-                  <Link href={"/products/electric-samovar"}>
-                     <div className="bg-[#f5f5f7] w-[300px] h-[300px] flex items-center justify-center">
+                  <Link
+                     href={"/products/electric-samovar"}
+                     className="min-w-[150px] min-h-[150px] max-w-[300px] max-h-[300px]"
+                  >
+                     <div className="bg-[#f5f5f7] w-full h-full flex items-center justify-center">
                         <Image
                            src={"/images/electric-samovar.webp"}
                            alt="electric samovar"
@@ -253,8 +262,11 @@ export function Landing() {
                         />
                      </div>
                   </Link>
-                  <Link href={"/products/baristan-electric-kettle"}>
-                     <div className="bg-[#f5f5f7] w-[300px] h-[300px] flex items-center justify-center">
+                  <Link
+                     href={"/products/baristan-electric-kettle"}
+                     className="min-w-[150px] min-h-[150px] max-w-[300px] max-h-[300px]"
+                  >
+                     <div className="bg-[#f5f5f7] w-full h-full flex items-center justify-center">
                         <Image
                            src={"/images/baristan-electric-kettle-2.webp"}
                            alt="baristan-electric-kettle"
@@ -263,7 +275,10 @@ export function Landing() {
                         />
                      </div>
                   </Link>
-                  <Link href={"/products/electric-samovar"}>
+                  <Link
+                     href={"/products/electric-samovar"}
+                     className="min-w-[150px] min-h-[150px] max-w-[300px] max-h-[300px]"
+                  >
                      <div className="bg-[#f5f5f7] w-[300px] h-[300px] flex items-center justify-center">
                         <Image
                            src={"/images/electric-samovar.webp"}
