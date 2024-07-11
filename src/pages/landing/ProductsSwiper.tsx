@@ -1,23 +1,21 @@
 "use client";
 
-import { SwiperSlide, Swiper, useSwiper } from "swiper/react";
-import { Scrollbar, Pagination, Navigation, Thumbs } from "swiper/modules";
-import { useState } from "react";
+import { SwiperSlide, Swiper } from "swiper/react";
+import { Pagination } from "swiper/modules";
 import Link from "next/link";
 import Image from "next/image";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import "swiper/css/scrollbar";
+
+// style={{
+//    "--swiper-pagination-color": "gray",
+// }}
 
 export default function ProductsSwiper() {
-   const swiperI = useSwiper();
    return (
       <Swiper
-         style={{
-            "--swiper-pagination-color": "gray",
-         }}
-         className="h-[90%] flex items-center md:hidden"
+         className="flex lg:!hidden h-[90%] items-center"
          modules={[Pagination]}
          pagination={true}
          spaceBetween={50}
