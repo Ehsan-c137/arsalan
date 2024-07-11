@@ -4,7 +4,7 @@ import React from "react";
 import Accordion from "@/components/Accordion/Accordion";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { allProducts } from "@/constant";
+import { allProducts, allParts } from "@/constant";
 
 const shopItems = [
    {
@@ -21,14 +21,12 @@ const shopItems = [
    {
       heading: "PARTs",
       children: [
-         { name: "Air Fryers Oven", href: "part-air-fryers-oven" },
-         { name: "Air Purifier", href: "part-air-purifier" },
-         { name: "Baristan Kettle", href: "part-bread-Maker" },
-         { name: "Bread Maker", href: "part-bread-maker" },
-         { name: "Chaiovar Samovar", href: "part-chaiovar-samovar" },
-         { name: "Electric Samovar V1", href: "part-electric-samovar-v1" },
-         { name: "Luna Kettle", href: "part-luna-kettle" },
-         { name: "Turkish Tea Maker", href: "part-turkish-tea-Maker" },
+         ...allParts.map((item) => {
+            return {
+               name: item.category?.toLocaleLowerCase(),
+               href: `/parts/${item.url}`,
+            };
+         }),
       ],
       isLast: true,
    },
