@@ -4,22 +4,22 @@ import Image from "next/image";
 interface IItem {
    title: string;
    price: string;
-   imgSrc: string;
+   img: string;
 }
 
-export default function CollectionsItem({ imgSrc, title, price }: IItem) {
+export default function CollectionsItem({ img, title, price }: IItem) {
    return (
-      <Link href={"/"} className="space-y-2 grid bg-[#f5f5f7]">
+      <Link href={"/"} className="gap-2 flex flex-col w-[260px]">
          <Image
-            src={"/"}
-            alt=""
+            src={img}
+            alt={title}
             width={250}
             height={250}
             className="bg-slate-300"
          />
-         <div className="flex flex-col">
-            <h4 className="text-xl">Bread maker</h4>
-            <p className="text-base">95$</p>
+         <div className="w-full truncate">
+            <h4 className="text-xl">{title}</h4>
+            <p className="text-base">{price}$</p>
          </div>
       </Link>
    );
