@@ -20,7 +20,7 @@ export default function CollectionsItem({ img, title, price, url }: IItem) {
          />
          <div className="w-full truncate">
             <h4 className="text-xl hover:underline">{title}</h4>
-            <p className="text-base">{price}$</p>
+            <p className="text-base">${price}</p>
          </div>
       </Link>
    );
