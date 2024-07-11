@@ -7,8 +7,8 @@ export default function DrawerComponent() {
          <div
             onClick={() => setIsOpen(false)}
             className={`${
-               isOpen ? "opacity-80" : "-left-full opacity-0"
-            } left-0 top-0 fixed w-full h-full bg-gray-500  overflow-hidden z-8`}
+               isOpen ? "opacity-80" : "left-[-200%] opacity-0"
+            } top-0 fixed w-full h-full bg-gray-500  overflow-hidden z-8`}
          ></div>
          <div
             onBlur={() => setIsOpen(false)}
