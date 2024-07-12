@@ -8,6 +8,8 @@ import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 import logoDark from "/public/arsalan-logo-dark.svg";
 import logo from "/public/arsalan-logo.png";
+import Link from "next/link";
+
 export default function MobileNav() {
    const { isOpen, setIsOpen } = useDrawer();
    const pathname = usePathname();
@@ -46,7 +48,9 @@ export default function MobileNav() {
             </div>
 
             <DrawerComponent />
-            <Image src={headerLogo} alt="logo" width={150} />
+            <Link href="/">
+               <Image src={headerLogo} alt="logo" width={150} />
+            </Link>
          </div>
       </>
    );
