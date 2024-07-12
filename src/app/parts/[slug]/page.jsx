@@ -26,7 +26,7 @@ export default function Page() {
    return (
       <div className="min-h-[100vh] pt-28 px-10">
          <div className="grid grid-cols-1 md:grid-cols-7 gap-10">
-            <div className="col-span-4 flex items-center justify-center">
+            <div className="col-span-1 md:col-span-4 flex items-center justify-center">
                <Swiper
                   className="w-full h-full"
                   spaceBetween={50}
@@ -61,7 +61,7 @@ export default function Page() {
                   })}
                </Swiper>
             </div>
-            <div className="col-span-3 space-y-5">
+            <div className="col-span-1 md:col-span-3 space-y-5">
                <h1 className="text-4xl font-semibold">{product?.title}</h1>
                <p className="text-4xl font-bold">${product?.price}</p>
                <div>
