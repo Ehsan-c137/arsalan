@@ -29,7 +29,7 @@ export default function DrawerComponent() {
                {pathname?.startsWith("/collections") ? (
                   <Filter />
                ) : (
-                  <nav className="flex flex-col w-full justify-between">
+                  <nav className="flex flex-col w-full justify-between text-black">
                      <ul className="flex flex-col gap-6">
                         <Link
                            href="/collections"
