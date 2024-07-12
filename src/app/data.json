@@ -1,13 +1,13 @@
 {
    "products": [
       {
-         "title": "Baristan Electric Gooseneck",
+         "title": "Baristan Electric Gooseneck Kettle",
          "category": "Electric Kettles",
          "price": "110",
          "imgSrc": [
-            "/images/luna-electric-tea-kettle/1.webp",
-            "/images/luna-electric-tea-kettle/2.webp",
-            "/images/luna-electric-tea-kettle/3.webp"
+            "/images/electric-kettels/baristan-electric-gooseneck-kettle/1.webp",
+            "/images/electric-kettels/baristan-electric-gooseneck-kettle/2.webp",
+            "/images/electric-kettels/baristan-electric-gooseneck-kettle/3.webp"
          ],
          "description": ""
       },
@@ -16,9 +16,9 @@
          "category": "Electric Kettles",
          "price": "110",
          "imgSrc": [
-            "/images/luna-electric-tea-kettle/1.webp",
-            "/images/luna-electric-tea-kettle/2.webp",
-            "/images/luna-electric-tea-kettle/3.webp"
+            "/images/electric-kettels/luna-electric-tea-kettle/1.webp",
+            "/images/electric-kettels/luna-electric-tea-kettle/2.webp",
+            "/images/electric-kettels/luna-electric-tea-kettle/3.webp"
          ],
          "description": ""
       },
@@ -27,9 +27,9 @@
          "category": "Electric Kettles",
          "price": "95",
          "imgSrc": [
-            "/images/luna-electric-tea-kettle/1.webp",
-            "/images/luna-electric-tea-kettle/2.webp",
-            "/images/luna-electric-tea-kettle/3.webp"
+            "/images/electric-kettels/baristan-electric-gooseneck-kettle/1.webp",
+            "/images/electric-kettels/baristan-electric-gooseneck-kettle/1.webp",
+            "/images/electric-kettels/baristan-electric-gooseneck-kettle/1.webp"
          ]
       },
       {
@@ -37,9 +37,9 @@
          "category": "Electric Kettles",
          "price": "75",
          "imgSrc": [
-            "/images/luna-electric-tea-kettle/1.webp",
-            "/images/luna-electric-tea-kettle/2.webp",
-            "/images/luna-electric-tea-kettle/3.webp"
+            "/images/electric-kettels/luna-adjustable-temperature-electric-kettle/1.webp",
+            "/images/electric-kettels/luna-adjustable-temperature-electric-kettle/2.webp",
+            "/images/electric-kettels/luna-adjustable-temperature-electric-kettle/3.webp"
          ]
       },
       {
@@ -69,7 +69,15 @@
          "title": "Large Prcelain Teapot",
          "category": "Tea Makers",
          "price": "29",
-         "imgSrc": "/asdf"
+         "imgSrc": [
+            "/images/tea-makers/large-precelain-teapot/1.webp",
+            "/images/tea-makers/large-precelain-teapot/2.webp",
+            "/images/tea-makers/large-precelain-teapot/3.webp",
+            "/images/tea-makers/large-precelain-teapot/4.webp",
+            "/images/tea-makers/large-precelain-teapot/5.webp",
+            "/images/tea-makers/large-precelain-teapot/6.webp",
+            "/images/tea-makers/large-precelain-teapot/7.webp"
+         ]
       },
       {
          "title": "TeaSmart Electric Turkish Tea Kettle (Open-Box)",
@@ -87,61 +95,106 @@
          "title": "Electric Russian Samovar",
          "category": "Samovars",
          "price": "165",
-         "imgSrc": "/asdf"
+         "imgSrc": ["/images/samovars/electric-russian-samovar/1.webp"]
       },
       {
          "title": "Turkish Coffee Maker",
          "price": "75",
-         "imgSrc": "/asdf"
+         "imgSrc": [
+            "/images/coffee-makers/turkish-coffee-maker/1.webp",
+            "/images/coffee-makers/turkish-coffee-maker/2.webp",
+            "/images/coffee-makers/turkish-coffee-maker/3.webp",
+            "/images/coffee-makers/turkish-coffee-maker/4.webp",
+            "/images/coffee-makers/turkish-coffee-maker/5.webp"
+         ]
       },
       {
          "title": "Pour-Over Glass Coffee",
          "category": "Coffee Makers",
          "price": "30",
-         "imgSrc": "/asdf"
+         "imgSrc": [
+            "/images/coffee-makers/pour-over-glass-coffee-maker/1.webp",
+            "/images/coffee-makers/pour-over-glass-coffee-maker/2.webp",
+            "/images/coffee-makers/pour-over-glass-coffee-maker/3.webp"
+         ]
       },
       {
          "title": "Bread Maker",
          "price": "165",
          "category": "Bread Makers",
-         "imgSrc": "/fasdf"
+         "imgSrc": [
+            "/images/bread-makers/1.webp",
+            "/images/bread-makers/2.webp",
+            "/images/bread-makers/3.webp",
+            "/images/bread-makers/4.webp",
+            "/images/bread-makers/5.webp"
+         ]
       },
       {
          "title": "Bread Maker (Open-Box)",
          "category": "Bread Makers",
          "price": "95",
-         "imgSrc": "/asdf"
+         "imgSrc": [
+            "/images/bread-makers/1.webp",
+            "/images/bread-makers/2.webp",
+            "/images/bread-makers/3.webp",
+            "/images/bread-makers/4.webp",
+            "/images/bread-makers/5.webp"
+         ]
       },
 
       {
          "title": "Smart Air Fryers, 5 Quart",
          "category": "Air Fryers",
          "price": "74",
-         "imgSrc": "/asdf"
+         "imgSrc": [
+            "/images/air-fryers/air-fryer-oven-5-quart/1.webp",
+            "/images/air-fryers/air-fryer-oven-5-quart/2.webp",
+            "/images/air-fryers/air-fryer-oven-5-quart/3.webp",
+            "/images/air-fryers/air-fryer-oven-5-quart/4.webp"
+         ]
       },
       {
-         "title": "Air Fryer Over, 13 Quart",
+         "title": "Air Fryer Oven, 13 Quart",
          "category": "Air Fryers",
          "price": "81",
-         "imgSrc": "/asdf"
+         "imgSrc": [
+            "/images/air-fryers/air-fryer-oven-13-quart/1.webp",
+            "/images/air-fryers/air-fryer-oven-13-quart/2.webp",
+            "/images/air-fryers/air-fryer-oven-13-quart/3.webp",
+            "/images/air-fryers/air-fryer-oven-13-quart/4.webp",
+            "/images/air-fryers/air-fryer-oven-13-quart/5.webp"
+         ]
       },
       {
          "title": "AutoMatic Pot Stirrer",
          "category": "Food Prep Appliances",
          "price": "51",
-         "imgSrc": "/asdf"
+         "imgSrc": [
+            "/images/food-prep-appliances/automatic-pot-stirrer/1.webp",
+            "/images/food-prep-appliances/automatic-pot-stirrer/2.webp"
+         ]
       },
       {
          "title": "Smart Sous Vide Cooker",
          "category": "Food Prep Appliances",
          "price": "70",
-         "imgSrc": "/afsdf"
+         "imgSrc": [
+            "/images/food-prep-appliances/smart-sous-vide-cooker/1.webp",
+            "/images/food-prep-appliances/smart-sous-vide-cooker/2.webp",
+            "/images/food-prep-appliances/smart-sous-vide-cooker/3.webp",
+            "/images/food-prep-appliances/smart-sous-vide-cooker/4.webp"
+         ]
       },
       {
          "title": "HEPA H13 Air Purifier",
          "category": "Air Purifiers",
          "price": "75",
-         "imgSrc": "/asdf"
+         "imgSrc": [
+            "/images/air-purifiers/hepa-h13-air-purifier/1.webp",
+            "/images/air-purifiers/hepa-h13-air-purifier/2.webp",
+            "/images/air-purifiers/hepa-h13-air-purifier/3.webp"
+         ]
       }
    ],
    "parts": [
@@ -149,169 +202,196 @@
          "title": "Removable Door",
          "category": "Air Fryer Oven",
          "price": "15",
-         "imgSrc": "/asdf"
+         "imgSrc": ["/images/parts/air-fryer-oven/removable-door/1.webp"]
       },
       {
          "title": "Rotisserie Rod & Forks",
          "price": "12",
          "category": "Air Fryer Oven",
-         "imgSrc": "/asdf"
+         "imgSrc": ["/images/parts/air-fryer-oven/Rotisserie-rod-forks/1.webp"]
       },
       {
          "title": "Removal Tool",
          "category": "Air Fryer Oven",
          "price": "6",
-         "imgSrc": "/asdf"
+         "imgSrc": ["/images/parts/air-fryer-oven/removal-tool/1.webp"]
       },
       {
          "title": "Mesh Racks",
          "category": "Air Fryer Oven",
          "price": "10",
-         "imgSrc": "/asdfa"
+         "imgSrc": ["/images/parts/air-fryer-oven/mesh-racks/1.webp"]
       },
       {
          "title": "Rotisserie Skewers",
          "category": "Air Fryer Oven",
          "price": "15",
-         "imgSrc": "/asdf"
+         "imgSrc": ["/images/parts/air-fryer-oven/rotisserie-skewers/1.webp"]
       },
       {
          "title": "Oil Drip Tray",
          "category": "Air Fryer Oven",
          "price": "8",
-         "imgSrc": "/asdf"
+         "imgSrc": ["/images/parts/air-fryer-oven/oil-drip-tray/1.webp"]
       },
       {
          "title": "Rotisserie Basket",
          "category": "Air Fryer Oven",
          "price": "12",
-         "imgSrc": "/asdf"
+         "imgSrc": ["/images/parts/air-fryer-oven/rotisserie-basket/1.webp"]
       },
       {
          "title": "Baristan Replacement Lid",
          "category": "Baristan Kettle",
          "price": "15",
-         "imgSrc": "/asdf"
+         "imgSrc": [
+            "/images/parts/baristan-kettle/baristan-replacement-lid/1.webp"
+         ]
       },
       {
          "title": "Baristan Replacement Base",
          "category": "Baristan Kettle",
          "price": "15",
-         "imgSrc": "/asdf"
+         "imgSrc": [
+            "/images/parts/baristan-kettle/baristan-replacement-base/1.webp"
+         ]
       },
       {
          "title": "Baristan Replacement Body",
          "category": "Baristan Kettle",
          "price": "40",
-         "imgSrc": "/asdf"
+         "imgSrc": [
+            "/images/parts/baristan-kettle/baristan-replacement-body/1.webp"
+         ]
       },
       {
          "title": "Air purifier Filter",
          "category": "Air Purifier",
          "price": "29",
-         "imgSrc": "/asdf"
+         "imgSrc": ["/images/parts/air-purifier/air-purifier-filter/1.webp"]
       },
       {
          "title": "Bread Maker Pan",
          "category": "Bread Maker",
          "price": "23",
-         "imgSrc": "/fasdf"
+         "imgSrc": ["/images/parts/bread-maker/bread-maker-pan/1.webp"]
       },
       {
          "title": "Bread Maker Kneading Paddles",
          "category": "Bread Maker",
          "price": "12",
-         "imgSrc": "/asdf"
+         "imgSrc": [
+            "/images/parts/bread-maker/bread-maker-kneading-paddles/1.webp"
+         ]
       },
       {
          "title": "Chaiovar Replacement Faucet",
          "category": "Chaiovar Samovar",
          "price": "15",
-         "imgSrc": "/asdf"
+         "imgSrc": [
+            "/images/parts/chaiovar-samovar/chaiovar-replacement-faucet/1.webp"
+         ]
       },
       {
          "title": "Chaiovar Replacement Teapot with Lid",
          "category": "Chaiovar Samovar",
          "price": "25",
-         "imgSrc": "/asdf"
+         "imgSrc": [
+            "/images/parts/chaiovar-samovar/chaiovar-replacement-teapot-with-lid/1.webp"
+         ]
       },
       {
          "title": "Chaiovar Replacement Lid",
          "category": "Chaiovar Samovar",
          "price": "15",
-         "imgSrc": "/asdf"
+         "imgSrc": [
+            "/images/parts/chaiovar-samovar/chaiovar-replacement-lid/1.webp"
+         ]
       },
       {
          "title": "Chaiovar Replacement Tea Infuser",
          "category": "Chaiovar Samovar",
          "price": "12",
-         "imgSrc": "/asdf"
+         "imgSrc": [
+            "/images/parts/chaiovar-samovar/chaiovar-replacement-tea-infuser/1.webp"
+         ]
       },
       {
          "title": "Chaiovar Replacement Teapot Holder",
          "category": "Chaiovar Samovar",
          "price": "15",
-         "imgSrc": "/asdf"
+         "imgSrc": [
+            "/images/parts/chaiovar-samovar/chaiovar-replacement-teapot-holder/1.webp"
+         ]
       },
       {
          "title": "Chaiovar Replacement Drip Tray",
          "category": "Chaiovar Samovar",
          "price": "15",
-         "imgSrc": "/asdf"
+         "imgSrc": [
+            "/images/parts/chaiovar-samovar/chaiovar-replacement-drip-tray/1.webp"
+         ]
       },
       {
          "title": "Samovar Teapot",
          "category": "Electric Samovar v1",
          "price": "21",
-         "imgSrc": "/asdf"
+         "imgSrc": ["/images/parts/electric-samovar-v1/samovar-teapot/1.webp"]
       },
       {
          "title": "Samovar Teapot Infuser",
          "category": "Electric Samovar v1",
          "price": "11",
-         "imgSrc": "/asdf"
+         "imgSrc": [
+            "/images/parts/electric-samovar-v1/samovar-teapot-infuser/1.webp"
+         ]
       },
       {
          "title": "Luna Replacement Base",
          "category": "Luna Kettle",
          "price": "45",
-         "imgSrc": "/asdf"
+         "imgSrc": ["/images/parts/luna-kettle/luna-replacement-base/1.webp"]
       },
       {
          "title": "Luna Replacement Lid",
          "category": "Luna Kettle",
          "price": "10",
-         "imgSrc": "/asdf"
+         "imgSrc": ["/images/parts/luna-kettle/luna-replacement-lid/1.webp"]
       },
       {
          "title": "Luna Replacement Body",
          "category": "Luna Kettle",
          "price": "50",
-         "imgSrc": "/asdf"
+         "imgSrc": ["/images/parts/luna-kettle/luna-replacement-body/1.webp"]
       },
       {
          "title": "Pour Over Mesh Filter",
          "category": "PourOver Coffe Maker",
          "price": "12",
-         "imgSrc": "/asdf"
+         "imgSrc": [
+            "/images/parts/pour-over-coffee-maker/pour-over-mesh-filter/1.webp",
+            "/images/parts/pour-over-coffee-maker/pour-over-mesh-filter/2.webp",
+            "/images/parts/pour-over-coffee-maker/pour-over-mesh-filter/3.webp",
+            "/images/parts/pour-over-coffee-maker/pour-over-mesh-filter/4.webp"
+         ]
       },
       {
          "title": "Tea Replacement Base",
          "category": "Tea Smart Turkish Tea Kettle",
          "price": "60",
-         "imgSrc": "/asdf"
+         "imgSrc": ["/images/tea-makers/teasmart-replacement-base/1.webp"]
       },
       {
          "title": "TeaSmart Replacement Teapot",
          "category": "Tea Smart Turkish Tea Kettle",
          "price": "20",
-         "imgSrc": "/asdf"
+         "imgSrc": ["/images/tea-makers/teasmart-replacement-teapot/1.webp"]
       },
       {
          "title": "TeaSmart Replacement Lid",
          "category": "Tea Smart Turkish Tea Kettle",
          "price": "10",
-         "imgSrc": "/asdf"
+         "imgSrc": ["/images/tea-makers/teasmart-replacement-lid/1.webp"]
       },
       {
          "title": "TeaSmart Replacement Body",
@@ -323,7 +403,7 @@
          "title": "Tea Maker Infuser",
          "category": "Turkish Tea Maker",
          "price": "10",
-         "imgSrc": "/asdf"
+         "imgSrc": ["/images/parts/turkish-tea-maker/tea-maker-infuser/1.webp"]
       }
    ]
 }
