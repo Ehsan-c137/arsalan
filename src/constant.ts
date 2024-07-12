@@ -92,6 +92,20 @@ const teaMakers = [
       price: "20",
       imgSrc: ["/images/tea-makers/teasmart-replacement-teapot/1.webp"],
    },
+   {
+      title: "Large Prcelain Teapot",
+      category: "Tea Makers",
+      price: "29",
+      imgSrc: [
+         "/images/tea-makers/large-precelain-teapot/1.webp",
+         "/images/tea-makers/large-precelain-teapot/2.webp",
+         "/images/tea-makers/large-precelain-teapot/3.webp",
+         "/images/tea-makers/large-precelain-teapot/4.webp",
+         "/images/tea-makers/large-precelain-teapot/5.webp",
+         "/images/tea-makers/large-precelain-teapot/6.webp",
+         "/images/tea-makers/large-precelain-teapot/7.webp",
+      ],
+   },
 ];
 
 const samovars = [
@@ -431,22 +445,30 @@ const TeaSmartTurkishTeaKettle: IItem[] = [
    {
       title: "Tea Replacement Base",
       price: "60",
-      imgSrc: "/asdf",
+      imgSrc: [
+         "/images/parts/teasmart-turkish-tea-kettle/tea-replacement-base/1.webp",
+      ],
    },
    {
       title: "TeaSmart Replacement Teapot",
       price: "20",
-      imgSrc: "/asdf",
+      imgSrc: [
+         "/images/parts/teasmart-turkish-tea-kettle/teasmart-replacement-teapot/1.webp",
+      ],
    },
    {
       title: "TeaSmart Replacement Lid",
       price: "10",
-      imgSrc: "/asdf",
+      imgSrc: [
+         "/images/parts/teasmart-turkish-tea-kettle/teasmart-replacement-lid/1.webp",
+      ],
    },
    {
       title: "TeaSmart Replacement Body",
       price: "50",
-      imgSrc: "/asdf",
+      imgSrc: [
+         "/images/parts/teasmart-turkish-tea-kettle/teasmart-replacement-body/1.webp",
+      ],
    },
 ];
 
@@ -454,7 +476,7 @@ const TurkishTeaMaker: IItem[] = [
    {
       title: "Tea Maker Infuser",
       price: "10",
-      imgSrc: "/asdf",
+      imgSrc: ["/images/parts/turkish-tea-maker/tea-maker-infuser/1.webp"],
    },
 ];
 
