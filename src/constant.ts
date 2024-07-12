@@ -1,4 +1,3 @@
-import { IM_Fell_Great_Primer_SC } from "next/font/google";
 import { title } from "process";
 
 interface IItem {
@@ -9,24 +8,40 @@ interface IItem {
 
 const electricKettels = [
    {
-      title: "Baristan Electric Gooseneck",
+      title: "Baristan Electric Gooseneck Kettle",
       price: "110",
-      imgSrc: "/asdf",
+      imgSrc: [
+         "/images/electric-kettels/baristan-electric-gooseneck-kettle/1.webp",
+         "/images/electric-kettels/baristan-electric-gooseneck-kettle/2.webp",
+         "/images/electric-kettels/baristan-electric-gooseneck-kettle/3.webp",
+      ],
    },
    {
       title: "Luna Electric Tea Kettle",
       price: "110",
-      imgSrc: "/asdf",
+      imgSrc: [
+         "/images/electric-kettels/luna-electric-tea-kettle/1.webp",
+         "/images/electric-kettels/luna-electric-tea-kettle/2.webp",
+         "/images/electric-kettels/luna-electric-tea-kettle/3.webp",
+      ],
    },
    {
       title: "Baristan Electric Gooseneck Kettle (open-box)",
       price: "95",
-      imgSrc: "/asdfsadf",
+      imgSrc: [
+         "/images/electric-kettels/baristan-electric-gooseneck-kettle/1.webp",
+         "/images/electric-kettels/baristan-electric-gooseneck-kettle/1.webp",
+         "/images/electric-kettels/baristan-electric-gooseneck-kettle/1.webp",
+      ],
    },
    {
       title: "Luna Adjustable Temperature Kettle (open-box)",
       price: "75",
-      imgSrc: "/fasdf",
+      imgSrc: [
+         "/images/electric-kettels/luna-adjustable-temperature-electric-kettle/1.webp",
+         "/images/electric-kettels/luna-adjustable-temperature-electric-kettle/2.webp",
+         "/images/electric-kettels/luna-adjustable-temperature-electric-kettle/3.webp",
+      ],
    },
 ];
 
@@ -34,17 +49,50 @@ const teaMakers = [
    {
       title: "Turkish Tea Maker",
       price: "130",
-      imgSrc: "/asdf",
-   },
-   {
-      title: "Large Prcelain Teapot",
-      price: "29",
-      imgSrc: "/asdf",
+      imgSrc: [
+         "/images/tea-makers/turkish-tea-maker/1.webp",
+         "/images/tea-makers/turkish-tea-maker/2.webp",
+         "/images/tea-makers/turkish-tea-maker/3.webp",
+         "/images/tea-makers/turkish-tea-maker/4.webp",
+         "/images/tea-makers/turkish-tea-maker/5.webp",
+      ],
    },
    {
       title: "TeaSmart Electric Turkish Tea Kettle (Open-Box)",
       price: "85",
-      imgSrc: "/asdf",
+      imgSrc: [
+         "/images/tea-makers/teasmart-electric-turkish-tea-kettle/1.webp",
+         "/images/tea-makers/teasmart-electric-turkish-tea-kettle/2.webp",
+         "/images/tea-makers/teasmart-electric-turkish-tea-kettle/3.webp",
+         "/images/tea-makers/teasmart-electric-turkish-tea-kettle/4.webp",
+         "/images/tea-makers/teasmart-electric-turkish-tea-kettle/5.webp",
+      ],
+   },
+   {
+      title: "TeaSmart Electric Turkish Tea Kettle",
+      price: "85",
+      imgSrc: [
+         "/images/tea-makers/teasmart-electric-turkish-tea-kettle/1.webp",
+         "/images/tea-makers/teasmart-electric-turkish-tea-kettle/2.webp",
+         "/images/tea-makers/teasmart-electric-turkish-tea-kettle/3.webp",
+         "/images/tea-makers/teasmart-electric-turkish-tea-kettle/4.webp",
+         "/images/tea-makers/teasmart-electric-turkish-tea-kettle/5.webp",
+      ],
+   },
+   {
+      title: "Teasmart Replacement base",
+      price: "60",
+      imgSrc: ["/images/tea-makers/teasmart-replacement-base/1.webp"],
+   },
+   {
+      title: "Teasmart Replacement Lid",
+      price: "10",
+      imgSrc: ["/images/tea-makers/teasmart-replacement-lid/1.webp"],
+   },
+   {
+      title: "Teasmart Replacement Teapot",
+      price: "20",
+      imgSrc: ["/images/tea-makers/teasmart-replacement-teapot/1.webp"],
    },
 ];
 
@@ -204,7 +252,7 @@ const AirFryerOven: IItem[] = [
 
 const AirPurifier: IItem[] = [
    {
-      title: "َAir purifier Filter",
+      title: "Air purifier Filter",
       price: "29",
       imgSrc: "/asdf",
    },
