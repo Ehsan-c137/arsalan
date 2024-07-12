@@ -57,9 +57,9 @@ export default function CollectionsFilter({
             }}
             className="py-12 flex justify-center border-[black] font-semibold text-2xl"
          >
-            <p className="max-w-[1228px] w-full ml-auto mr-auto">
+            <p className="max-w-[1228px] pl-[30px] md:p-0 w-full ml-auto mr-auto">
                {pathname === "/collections/products"
-                  ? "ARSALAN products"
+                  ? "SAKI products"
                   : "Smart Air Fryer & Oven, App-Controlled with Recipe Book"}
             </p>
          </div>
