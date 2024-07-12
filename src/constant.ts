@@ -100,7 +100,7 @@ const samovars = [
    {
       title: "Electric Russian Samovar",
       price: "165",
-      imgSrc: "/asdf",
+      imgSrc: ["/images/samovars/electric-russian-samovar/1.webp"],
    },
 ];
 
@@ -108,12 +108,22 @@ const coffeMakers = [
    {
       title: "Turkish Coffee Maker",
       price: "75",
-      imgSrc: "/asdf",
+      imgSrc: [
+         "/images/coffee-makers/turkish-coffee-maker/1.webp",
+         "/images/coffee-makers/turkish-coffee-maker/2.webp",
+         "/images/coffee-makers/turkish-coffee-maker/3.webp",
+         "/images/coffee-makers/turkish-coffee-maker/4.webp",
+         "/images/coffee-makers/turkish-coffee-maker/5.webp",
+      ],
    },
    {
       title: "Pour-Over Glass Coffee",
       price: "30",
-      imgSrc: "/asdf",
+      imgSrc: [
+         "/images/coffee-makers/pour-over-glass-coffee-maker/1.webp",
+         "/images/coffee-makers/pour-over-glass-coffee-maker/2.webp",
+         "/images/coffee-makers/pour-over-glass-coffee-maker/3.webp",
+      ],
    },
 ];
 
@@ -121,12 +131,24 @@ const breadMakers = [
    {
       title: "Bread Maker",
       price: "165",
-      imgSrc: "/fasdf",
+      imgSrc: [
+         "/images/bread-makers/1.webp",
+         "/images/bread-makers/2.webp",
+         "/images/bread-makers/3.webp",
+         "/images/bread-makers/4.webp",
+         "/images/bread-makers/5.webp",
+      ],
    },
    {
       title: "Bread Maker (Open-Box)",
       price: "95",
-      imgSrc: "/asdf",
+      imgSrc: [
+         "/images/bread-makers/1.webp",
+         "/images/bread-makers/2.webp",
+         "/images/bread-makers/3.webp",
+         "/images/bread-makers/4.webp",
+         "/images/bread-makers/5.webp",
+      ],
    },
 ];
 
@@ -134,12 +156,23 @@ const airFryers = [
    {
       title: "Smart Air Fryers, 5 Quart",
       price: "74",
-      imgSrc: "/asdf",
+      imgSrc: [
+         "/images/air-fryers/air-fryer-oven-5-quart/1.webp",
+         "/images/air-fryers/air-fryer-oven-5-quart/2.webp",
+         "/images/air-fryers/air-fryer-oven-5-quart/3.webp",
+         "/images/air-fryers/air-fryer-oven-5-quart/4.webp",
+      ],
    },
    {
-      title: "Air Fryer Over, 13 Quart",
+      title: "Air Fryer Oven, 13 Quart",
       price: "81",
-      imgSrc: "/asdf",
+      imgSrc: [
+         "/images/air-fryers/air-fryer-oven-13-quart/1.webp",
+         "/images/air-fryers/air-fryer-oven-13-quart/2.webp",
+         "/images/air-fryers/air-fryer-oven-13-quart/3.webp",
+         "/images/air-fryers/air-fryer-oven-13-quart/4.webp",
+         "/images/air-fryers/air-fryer-oven-13-quart/5.webp",
+      ],
    },
 ];
 
@@ -147,12 +180,20 @@ const foodPrepAppliances = [
    {
       title: "AutoMatic Pot Stirrer",
       price: "51",
-      imgSrc: "/asdf",
+      imgSrc: [
+         "/images/food-prep-appliances/automatic-pot-stirrer/1.webp",
+         "/images/food-prep-appliances/automatic-pot-stirrer/2.webp",
+      ],
    },
    {
       title: "Smart Sous Vide Cooker",
       price: "70",
-      imgSrc: "/afsdf",
+      imgSrc: [
+         "/images/food-prep-appliances/smart-sous-vide-cooker/1.webp",
+         "/images/food-prep-appliances/smart-sous-vide-cooker/2.webp",
+         "/images/food-prep-appliances/smart-sous-vide-cooker/3.webp",
+         "/images/food-prep-appliances/smart-sous-vide-cooker/4.webp",
+      ],
    },
 ];
 
