@@ -1,5 +1,3 @@
-import { title } from "process";
-
 interface IItem {
    title: string;
    price: string;
@@ -201,7 +199,11 @@ const airPurifiers = [
    {
       title: "HEPA H13 Air Purifier",
       price: "75",
-      imgSrc: "/asdf",
+      imgSrc: [
+         "/images/air-purifiers/hepa-h13-air-purifier/1.webp",
+         "/images/air-purifiers/hepa-h13-air-purifier/2.webp",
+         "/images/air-purifiers/hepa-h13-air-purifier/3.webp",
+      ],
    },
 ];
 
