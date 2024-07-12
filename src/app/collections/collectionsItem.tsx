@@ -10,7 +10,10 @@ interface IItem {
 
 export default function CollectionsItem({ img, title, price, url }: IItem) {
    return (
-      <Link href={`${url}`} className="gap-2 flex flex-col w-[260px]">
+      <Link
+         href={`${url}`}
+         className="gap-2 flex flex-col w-[260px] text-black"
+      >
          <Image
             src={img}
             alt={title}
