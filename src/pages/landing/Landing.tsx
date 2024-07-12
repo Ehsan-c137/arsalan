@@ -17,9 +17,11 @@ export function Landing() {
                      heights.
                   </p>
                </div>
-               <button className="border-2 pt-2 pb-2 pl-4 pr-4 border-red-500 bg-transparent text-white hover:bg-red-500 transition-[background] duration-400">
-                  EXPLORE
-               </button>
+               <Link href={"/collections"}>
+                  <button className="border-2 pt-2 pb-2 pl-4 pr-4 border-red-500 bg-transparent text-white hover:bg-red-500 transition-[background] duration-400">
+                     EXPLORE
+                  </button>
+               </Link>
             </div>
          </div>
          {/*  */}
@@ -36,12 +38,16 @@ export function Landing() {
                   design.
                </p>
                <div>
-                  <button className="border-2 border-white pt-2 pb-2 pr-4 pl-4 text-white hover:text-red-600 hover:bg-white transition-colors">
-                     DISCOVER
-                  </button>
-                  <button className="pt-2 pb-2 pr-4 pl-4 text-white">
-                     SHOP NOW
-                  </button>
+                  <Link href="/collections">
+                     <button className="border-2 border-white pt-2 pb-2 pr-4 pl-4 text-white hover:text-red-600 hover:bg-white transition-colors">
+                        DISCOVER
+                     </button>
+                  </Link>
+                  <Link href="/products/turkish-tea-maker">
+                     <button className="pt-2 pb-2 pr-4 pl-4 text-white">
+                        SHOP NOW
+                     </button>
+                  </Link>
                </div>
             </div>
             <div className="bg-black h-full w-full col-span-1 ">
@@ -67,9 +73,11 @@ export function Landing() {
                   <p className="text-5xl md:text-6xl">Baristan</p>
                   <p className="text-3xl">Precision in Every Pour</p>
                </div>
-               <button className="border-2 pt-2 pb-2 pl-4 pr-4 border-red-500 bg-transparent text-white hover:bg-red-500 transition-[background] duration-400">
-                  EXPLORE
-               </button>
+               <Link href="/collections">
+                  <button className="border-2 pt-2 pb-2 pl-4 pr-4 border-red-500 bg-transparent text-white hover:bg-red-500 transition-[background] duration-400">
+                     EXPLORE
+                  </button>
+               </Link>
             </div>
          </div>
          <div className="grid grid-cols-1 lg:grid-cols-2 h-[100vh]">
@@ -163,9 +171,11 @@ export function Landing() {
                      A modern touch to timeless traditions.
                   </p>
                </div>
-               <button className="border-2 pt-2 pb-2 pl-4 pr-4 border-red-500 bg-transparent text-white hover:bg-red-500 transition-[background] duration-400">
-                  EXPLORE
-               </button>
+               <Link href="/collections">
+                  <button className="border-2 pt-2 pb-2 pl-4 pr-4 border-red-500 bg-transparent text-white hover:bg-red-500 transition-[background] duration-400">
+                     EXPLORE
+                  </button>
+               </Link>
             </div>
          </div>
          <div className="grid grid-cols-1 lg:grid-cols-2 h-[100vh]">
@@ -215,9 +225,11 @@ export function Landing() {
                   innovation and thoughtful design.
                </p>
                <div>
-                  <button className="border-2 border-red-500  pt-2 pb-2 pr-4 pl-4  hover:text-red-600 hover:bg-white transition-colors">
-                     DISCOVER
-                  </button>
+                  <Link href="/collections">
+                     <button className="border-2 border-red-500  pt-2 pb-2 pr-4 pl-4  hover:text-red-600 hover:bg-white transition-colors">
+                        DISCOVER
+                     </button>
+                  </Link>
                </div>
             </div>
             <div className="text-black h-full w-full col-span-1 flex gap-4 overflow-x-hidden items-center justify-center">
