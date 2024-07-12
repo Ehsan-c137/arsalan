@@ -25,7 +25,7 @@ export default function Page() {
    console.log(product);
    return (
       <div className="min-h-[100vh] pt-28 px-10">
-         <div className="grid grid-cols-7 gap-10">
+         <div className="grid grid-cols-1 md:grid-cols-7 gap-10">
             <div className="col-span-4 flex items-center justify-center">
                <Swiper
                   className="w-full h-full"
