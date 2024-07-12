@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import data from "@/app/data.json";
 import Accordion from "@/components/Accordion/Accordion";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { convertToUrl } from "@/utils/convertToUrl";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -14,7 +15,7 @@ export default function Page() {
    const url = pathname?.split("/").pop();
 
    const product = data.products.find((p) => {
-      const path = p.title.replace(/ /g, "-").toLowerCase();
+      const path = convertToUrl(p.title);
       return path === url;
    });
 
