@@ -5,6 +5,7 @@ import Accordion from "@/components/Accordion/Accordion";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { allProducts, allParts } from "@/constant";
+import Filter from "@/components/filter/Filter";
 
 const shopItems = [
    {
@@ -63,42 +64,8 @@ export default function CollectionsFilter({
             </p>
          </div>
          <div className="flex gap-10 pt-10 lg:min-w-[1228px] max-w-[1228px] ml-auto mr-auto">
-            <div className="pr-8 pb-8">
-               {shopItems.map((item) => (
-                  <Accordion
-                     key={item.heading}
-                     heading={item.heading}
-                     isLast={item.isLast}
-                  >
-                     {item.children.map((child) => {
-                        const isAcitve =
-                           `${`/collections/products/${child.href}`}` ===
-                           pathname;
-
-                        return (
-                           <p
-                              className={`flex items-center h-8 px-4 text-sm hover:text-red-600 transition-opacity truncate ${
-                                 isAcitve && "text-red-600"
-                              }`}
-                              onClick={() => {
-                                 const isPartsSection =
-                                    item.heading === "PARTs";
-                                 if (isPartsSection) {
-                                    router.push(`/collections/${child.href}`);
-                                 } else {
-                                    router.push(
-                                       `/collections/products/${child.href}`
-                                    );
-                                 }
-                              }}
-                              key={child.href}
-                           >
-                              {child.name}
-                           </p>
-                        );
-                     })}
-                  </Accordion>
-               ))}
+            <div className="hidden lg:block">
+               <Filter />
             </div>
             <div className="flex justify-center">{children}</div>
          </div>
