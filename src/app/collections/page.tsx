@@ -11,13 +11,14 @@ export default function Collections() {
                   <div className="grid lg:grid-cols-3 gap-x-14 gap-y-16">
                      {products.items.map((item) => {
                         const url = item.title.replace(/ /g, "-").toLowerCase();
+                        console.log(item.imgSrc[0]);
                         return (
                            <CollectionsItem
                               url={`/products/${url}`}
                               key={item.title}
                               price={item.price}
                               title={item.title}
-                              img={`${item.imgSrc}`}
+                              img={`${item.imgSrc[0]}`}
                            />
                         );
                      })}

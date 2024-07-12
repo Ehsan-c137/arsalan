@@ -14,9 +14,9 @@ export default function CollectionsItem({ img, title, price, url }: IItem) {
          <Image
             src={img}
             alt={title}
-            width={250}
-            height={250}
-            className="bg-slate-300"
+            width={260}
+            height={260}
+            className="bg-[#f5f5f7] object-contain h-[260px]"
          />
          <div className="w-full truncate">
             <h4 className="text-xl hover:underline">{title}</h4>
