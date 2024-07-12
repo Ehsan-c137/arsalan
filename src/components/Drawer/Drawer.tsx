@@ -32,12 +32,14 @@ export default function DrawerComponent() {
                   <nav className="flex flex-col w-full justify-between text-black">
                      <ul className="flex flex-col gap-6">
                         <Link
+                           onClick={() => setIsOpen(false)}
                            href="/collections"
                            className="transition-colors duration-400"
                         >
                            <li>Shop</li>
                         </Link>
                         <Link
+                           onClick={() => setIsOpen(false)}
                            href="/support"
                            className="transition-colors duration-400"
                         >
