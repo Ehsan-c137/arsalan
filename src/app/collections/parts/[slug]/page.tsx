@@ -1,5 +1,7 @@
 import { allParts as data } from "@/constant";
+import { convertToUrl } from "@/utils/convertToUrl";
 import CollectionsItem from "../../collectionsItem";
+// import data from "@/app/data.json";
 
 type pageProps = {
    params: {
@@ -13,7 +15,8 @@ export default function Page(slug: pageProps) {
    return (
       <div className="flex flex-wrap gap-8">
          {products?.items.map((item) => {
-            const url = item.title.replace(/ /g, "-").toLowerCase();
+            const url = convertToUrl(item.title);
+            // const url = item.title.replace(/ /g, "-").toLowerCase();
             return (
                <CollectionsItem
                   key={item.title}
