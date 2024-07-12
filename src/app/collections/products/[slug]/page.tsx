@@ -22,7 +22,7 @@ export default function Page(slug: pageProps) {
                   url={`/products/${url}`}
                   price={item.price}
                   title={item.title}
-                  img={`${item.imgSrc}`}
+                  img={`${item.imgSrc[0]}`}
                />
             );
          })}
