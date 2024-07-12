@@ -18,7 +18,7 @@ export default function CollectionsItem({ img, title, price, url }: IItem) {
             height={260}
             className="bg-[#f5f5f7] object-contain h-[260px]"
          />
-         <div className="w-full truncate">
+         <div className="w-full">
             <h4 className="text-xl hover:underline">{title}</h4>
             <p className="text-base">${price}</p>
          </div>
