@@ -13,7 +13,7 @@ export default function Page(slug: pageProps) {
    const products = data.find((product) => product.url === slug.params.slug);
 
    return (
-      <div className="flex flex-wrap gap-8">
+      <div className="flex flex-wrap justify-center md:justify-start gap-8">
          {products?.items.map((item) => {
             const url = convertToUrl(item.title);
             // const url = item.title.replace(/ /g, "-").toLowerCase();
