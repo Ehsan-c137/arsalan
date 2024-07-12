@@ -1,7 +1,7 @@
 interface IItem {
    title: string;
    price: string;
-   imgSrc: string;
+   imgSrc: string[];
 }
 
 const electricKettels = [
@@ -78,7 +78,7 @@ const teaMakers = [
       ],
    },
    {
-      title: "Teasmart Replacement base",
+      title: "Teasmart Replacement Base",
       price: "60",
       imgSrc: ["/images/tea-makers/teasmart-replacement-base/1.webp"],
    },
@@ -259,37 +259,37 @@ const AirFryerOven: IItem[] = [
    {
       title: "Removable Door",
       price: "15",
-      imgSrc: "/asdf",
+      imgSrc: ["/images/parts/air-fryer-oven/removable-door/1.webp"],
    },
    {
       title: "Rotisserie Rod & Forks",
       price: "12",
-      imgSrc: "/asdf",
+      imgSrc: ["/images/parts/air-fryer-oven/Rotisserie-rod-forks/1.webp"],
    },
    {
       title: "Removal Tool",
       price: "6",
-      imgSrc: "/asdf",
+      imgSrc: ["/images/parts/air-fryer-oven/removal-tool/1.webp"],
    },
    {
       title: "Mesh Racks",
       price: "10",
-      imgSrc: "/asdfa",
+      imgSrc: ["/images/parts/air-fryer-oven/mesh-racks/1.webp"],
    },
    {
       title: "Rotisserie Skewers",
       price: "15",
-      imgSrc: "/asdf",
+      imgSrc: ["/images/parts/air-fryer-oven/rotisserie-skewers/1.webp"],
    },
    {
       title: "Oil Drip Tray",
       price: "8",
-      imgSrc: "/asdf",
+      imgSrc: ["/images/parts/air-fryer-oven/oil-drip-tray/1.webp"],
    },
    {
       title: "Rotisserie Basket",
       price: "12",
-      imgSrc: "/asdf",
+      imgSrc: ["/images/parts/air-fryer-oven/rotisserie-basket/1.webp"],
    },
 ];
 
@@ -297,7 +297,7 @@ const AirPurifier: IItem[] = [
    {
       title: "Air purifier Filter",
       price: "29",
-      imgSrc: "/asdf",
+      imgSrc: ["/images/parts/air-purifier/air-purifier-filter/1.webp"],
    },
 ];
 
@@ -305,17 +305,21 @@ const BaristanKettle: IItem[] = [
    {
       title: "Baristan Replacement Lid",
       price: "15",
-      imgSrc: "/asdf",
+      imgSrc: ["/images/parts/baristan-kettle/baristan-replacement-lid/1.webp"],
    },
    {
       title: "Baristan Replacement Base",
       price: "15",
-      imgSrc: "/asdf",
+      imgSrc: [
+         "/images/parts/baristan-kettle/baristan-replacement-base/1.webp",
+      ],
    },
    {
       title: "Baristan Replacement Body",
       price: "40",
-      imgSrc: "/asdf",
+      imgSrc: [
+         "/images/parts/baristan-kettle/baristan-replacement-body/1.webp",
+      ],
    },
 ];
 
@@ -323,12 +327,12 @@ const BreadMaker: IItem[] = [
    {
       title: "Bread Maker Pan",
       price: "23",
-      imgSrc: "/fasdf",
+      imgSrc: ["/images/parts/bread-maker/bread-maker-pan/1.webp"],
    },
    {
       title: "Bread Maker Kneading Paddles",
       price: "12",
-      imgSrc: "/asdf",
+      imgSrc: ["/images/parts/bread-maker/bread-maker-kneading-paddles/1.webp"],
    },
 ];
 
@@ -336,32 +340,44 @@ const ChaiovarSamovar: IItem[] = [
    {
       title: "Chaiovar Replacement Faucet",
       price: "15",
-      imgSrc: "/asdf",
+      imgSrc: [
+         "/images/parts/chaiovar-samovar/chaiovar-replacement-faucet/1.webp",
+      ],
    },
    {
       title: "Chaiovar Replacement Teapot with Lid",
       price: "25",
-      imgSrc: "/asdf",
+      imgSrc: [
+         "/images/parts/chaiovar-samovar/chaiovar-replacement-teapot-with-lid/1.webp",
+      ],
    },
    {
       title: "Chaiovar Replacement Lid",
       price: "15",
-      imgSrc: "/asdf",
+      imgSrc: [
+         "/images/parts/chaiovar-samovar/chaiovar-replacement-lid/1.webp",
+      ],
    },
    {
       title: "Chaiovar Replacement Tea Infuser",
       price: "12",
-      imgSrc: "/asdf",
+      imgSrc: [
+         "/images/parts/chaiovar-samovar/chaiovar-replacement-tea-infuser/1.webp",
+      ],
    },
    {
       title: "Chaiovar Replacement Teapot Holder",
       price: "15",
-      imgSrc: "/asdf",
+      imgSrc: [
+         "/images/parts/chaiovar-samovar/chaiovar-replacement-teapot-holder/1.webp",
+      ],
    },
    {
       title: "Chaiovar Replacement Drip Tray",
       price: "15",
-      imgSrc: "/asdf",
+      imgSrc: [
+         "/images/parts/chaiovar-samovar/chaiovar-replacement-drip-tray/1.webp",
+      ],
    },
 ];
 
@@ -369,12 +385,14 @@ const ElectricSamovarV1: IItem[] = [
    {
       title: "Samovar Teapot",
       price: "21",
-      imgSrc: "/asdf",
+      imgSrc: ["/images/parts/electric-samovar-v1/samovar-teapot/1.webp"],
    },
    {
       title: "Samovar Teapot Infuser",
       price: "11",
-      imgSrc: "/asdf",
+      imgSrc: [
+         "/images/parts/electric-samovar-v1/samovar-teapot-infuser/1.webp",
+      ],
    },
 ];
 
@@ -382,17 +400,17 @@ const LunaKettle: IItem[] = [
    {
       title: "Luna Replacement Base",
       price: "45",
-      imgSrc: "/asdf",
+      imgSrc: ["/images/parts/luna-kettle/luna-replacement-base/1.webp"],
    },
    {
       title: "Luna Replacement Lid",
       price: "10",
-      imgSrc: "/asdf",
+      imgSrc: ["/images/parts/luna-kettle/luna-replacement-lid/1.webp"],
    },
    {
       title: "Luna Replacement Body",
       price: "50",
-      imgSrc: "/asdf",
+      imgSrc: ["/images/parts/luna-kettle/luna-replacement-body/1.webp"],
    },
 ];
 
@@ -400,7 +418,12 @@ const PourOverCoffeMaker: IItem[] = [
    {
       title: "Pour Over Mesh Filter",
       price: "12",
-      imgSrc: "/asdf",
+      imgSrc: [
+         "/images/parts/pour-over-coffee-maker/pour-over-mesh-filter/1.webp",
+         "/images/parts/pour-over-coffee-maker/pour-over-mesh-filter/2.webp",
+         "/images/parts/pour-over-coffee-maker/pour-over-mesh-filter/3.webp",
+         "/images/parts/pour-over-coffee-maker/pour-over-mesh-filter/4.webp",
+      ],
    },
 ];
 

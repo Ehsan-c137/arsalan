@@ -46,7 +46,24 @@
          "title": "Turkish Tea Maker",
          "category": "Tea Makers",
          "price": "130",
-         "imgSrc": "/asdf"
+         "imgSrc": [
+            "/images/tea-makers/turkish-tea-maker/1.webp",
+            "/images/tea-makers/turkish-tea-maker/2.webp",
+            "/images/tea-makers/turkish-tea-maker/3.webp",
+            "/images/tea-makers/turkish-tea-maker/4.webp",
+            "/images/tea-makers/turkish-tea-maker/5.webp"
+         ]
+      },
+      {
+         "title": "TeaSmart Electric Turkish Tea Kettle",
+         "price": "85",
+         "imgSrc": [
+            "/images/tea-makers/teasmart-electric-turkish-tea-kettle/1.webp",
+            "/images/tea-makers/teasmart-electric-turkish-tea-kettle/2.webp",
+            "/images/tea-makers/teasmart-electric-turkish-tea-kettle/3.webp",
+            "/images/tea-makers/teasmart-electric-turkish-tea-kettle/4.webp",
+            "/images/tea-makers/teasmart-electric-turkish-tea-kettle/5.webp"
+         ]
       },
       {
          "title": "Large Prcelain Teapot",
@@ -58,7 +75,13 @@
          "title": "TeaSmart Electric Turkish Tea Kettle (Open-Box)",
          "category": "Tea Makers",
          "price": "85",
-         "imgSrc": "/asdf"
+         "imgSrc": [
+            "/images/tea-makers/teasmart-electric-turkish-tea-kettle/1.webp",
+            "/images/tea-makers/teasmart-electric-turkish-tea-kettle/2.webp",
+            "/images/tea-makers/teasmart-electric-turkish-tea-kettle/3.webp",
+            "/images/tea-makers/teasmart-electric-turkish-tea-kettle/4.webp",
+            "/images/tea-makers/teasmart-electric-turkish-tea-kettle/5.webp"
+         ]
       },
       {
          "title": "Electric Russian Samovar",
