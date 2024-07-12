@@ -2,6 +2,7 @@ import React from "react";
 import Accordion from "@/components/Accordion/Accordion";
 import { usePathname, useRouter } from "next/navigation";
 import { allProducts, allParts } from "@/constant";
+import { useDrawer } from "@/context/drawerContext";
 
 const shopItems = [
    {
@@ -32,6 +33,7 @@ const shopItems = [
 export default function Filter() {
    const pathname = usePathname();
    const router = useRouter();
+   const { isOpen, setIsOpen } = useDrawer();
    return (
       <div className="pr-8 pb-8">
          {shopItems.map((item) => (
@@ -50,6 +52,7 @@ export default function Filter() {
                            isAcitve && "text-red-600"
                         }`}
                         onClick={() => {
+                           isOpen && setIsOpen(false);
                            const isPartsSection = item.heading === "PARTs";
                            if (isPartsSection) {
                               router.push(`/collections/${child.href}`);
