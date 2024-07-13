@@ -10,7 +10,9 @@ export default function Collections() {
                   className="flex flex-col items-center md:items-start gap-8"
                   key={products.category}
                >
-                  <p className="text-2xl tracking-wider">{products.category}</p>
+                  <p className="text-2xl text-black tracking-wider">
+                     {products.category}
+                  </p>
                   <div className="grid grid-cols-1 justify-center md:grid-cols-2 lg:grid-cols-3 gap-x-14 gap-y-16">
                      {products.items.map((item) => {
                         const url = item.title.replace(/ /g, "-").toLowerCase();
