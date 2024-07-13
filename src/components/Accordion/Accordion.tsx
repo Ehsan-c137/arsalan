@@ -23,7 +23,7 @@ export default function Accordion({
       <>
          <div className={`flex flex-col ${isLayout ? "w-56" : "w-full"}`}>
             <button
-               className={`group border-t ${
+               className={`group p-2 border-t ${
                   isLast ? "border-b" : ""
                } border-[#c1c1c2] focus:outline-none`}
                onClick={() => setIsOpen(!isOpen)}
@@ -31,9 +31,11 @@ export default function Accordion({
                <div
                   className={`flex items-center justify-between px-3 ${
                      isLayout ? "h-20" : "h-12"
-                  } font-semibold`}
+                  }`}
                >
-                  <span className="truncate">{heading}</span>
+                  <span className="truncate font-light text-sm">
+                     {heading === "products" ? "PRODUCTs" : heading}
+                  </span>
                   <div className="font-light">
                      {isLayout && (
                         <div>{isOpen ? <MinusIcon /> : <PlusIcon />}</div>
