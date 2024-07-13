@@ -2,13 +2,14 @@ import Video from "@/components/video/Video";
 import Image from "next/image";
 import Link from "next/link";
 import ProductsSwiper from "./ProductsSwiper";
+import ChevronRightIcon from "@/assets/icons/chevron-right";
 
 export function Landing() {
    return (
       <div className="flex flex-col w-full">
          <div className="hero h-[100vh] w-full flex items-end relative object-cover">
             <Video src="/videos/home-section-tea-maker-big.mp4" />
-            <div className="pb-[30px] lg:pb-[100px] pl-6 lg:pl-10 space-y-6 absolute z-40 text-white">
+            <div className="pb-[30px] lg:pb-[100px] flex flex-col gap-4 pl-6 lg:pl-10 space-y-6 absolute z-40 text-white">
                <div className="space-y-2">
                   <p className="text-3xl">SAKI</p>
                   <p className="text-6xl">Turkish Tea Maker.</p>
@@ -18,7 +19,7 @@ export function Landing() {
                   </p>
                </div>
                <Link href={"/collections"}>
-                  <button className="border-2 pt-2 pb-2 pl-4 pr-4 border-red-500 bg-transparent text-white hover:bg-red-500 transition-[background] duration-400">
+                  <button className="border-2 px-10 py-2 border-red-600 bg-transparent text-white btn-effect">
                      EXPLORE
                   </button>
                </Link>
@@ -26,25 +27,27 @@ export function Landing() {
          </div>
          {/*  */}
          <div className="grid grid-cols-1 lg:grid-cols-2 h-[100vh]">
-            <div className="bg-red-600 pl-6 py-10 lg:pl-10 h-full w-full col-span-1 flex flex-col gap-4 justify-center">
-               <div>
-                  <p className="font-size-14px text-white">New</p>
-                  <p className="text-6xl text-white">Turkish Tea Maker</p>
+            <div className="bg-red-600 pl-6 py-10 lg:pl-10 h-full w-full col-span-1 flex flex-col gap-10 justify-center">
+               <div className="flex flex-col gap-4">
+                  <div>
+                     <p className="font-size-14px text-white">New</p>
+                     <p className="text-6xl text-white">Turkish Tea Maker</p>
+                  </div>
+                  <p className="text-2xl text-white">
+                     Elevate your tea experience with Turkish Tea Maker, fusing
+                     <br />
+                     innovation and tradition for authentic flavors sand a sleek
+                     design.
+                  </p>
                </div>
-               <p className="text-2xl text-white">
-                  Elevate your tea experience with Turkish Tea Maker, fusing
-                  <br />
-                  innovation and tradition for authentic flavors sand a sleek
-                  design.
-               </p>
-               <div>
+               <div className="flex gap-4">
                   <Link href="/collections">
-                     <button className="border-2 border-white pt-2 pb-2 pr-4 pl-4 text-white hover:text-red-600 hover:bg-white transition-colors">
+                     <button className="border-2 border-white pt-2 pb-2 pr-4 pl-4 btn-effect-white">
                         DISCOVER
                      </button>
                   </Link>
                   <Link href="/products/turkish-tea-maker">
-                     <button className="pt-2 pb-2 pr-4 pl-4 text-white">
+                     <button className="pt-2 pb-2 pr-4 pl-4 text-white hover:text-black duration-300">
                         SHOP NOW
                      </button>
                   </Link>
@@ -68,32 +71,48 @@ export function Landing() {
          {/*  */}
          <div className="hero h-[100vh] w-full flex items-end relative object-cover">
             <Video src="/videos/home-section-baristan-big.mp4" />
-            <div className="pb-[30px] lg:pb-[100px] pl-6 lg:pl-10 space-y-6 absolute z-50 text-white">
+            <div className="pb-[30px] lg:pb-[100px] flex flex-col gap-10 pl-6 lg:pl-10 space-y-6 absolute z-50 text-white">
                <div className="space-y-2">
                   <p className="text-5xl md:text-6xl">Baristan</p>
                   <p className="text-3xl">Precision in Every Pour</p>
                </div>
                <Link href="/collections">
-                  <button className="border-2 pt-2 pb-2 pl-4 pr-4 border-red-500 bg-transparent text-white hover:bg-red-500 transition-[background] duration-400">
+                  <button className="border-2 px-10 py-2 border-red-600 bg-transparent btn-effect">
                      EXPLORE
                   </button>
                </Link>
             </div>
          </div>
          <div className="grid grid-cols-1 lg:grid-cols-2 h-[100vh]">
-            <div className="pl-6 py-10 lg:pl-10 h-full w-full col-span-1 flex flex-col gap-4 justify-center items-start bg-[#161a1d] text-white">
-               <p className="text-4xl md:text-6xl">
-                  Baristan <br /> Electric Gooseneck Kettle
-               </p>
+            <div className="pl-6 py-10 lg:pl-10 h-full w-full col-span-1 flex flex-col gap-10 justify-center items-start bg-[#161a1d] text-white">
+               <div className="flex flex-col gap-4">
+                  <p className="text-4xl md:text-6xl">
+                     Baristan <br /> Electric Gooseneck Kettle
+                  </p>
 
-               <p className="text-lg md:text-2xl">
-                  Master the perfect pour. <br />
-                  Unrestricted flow for unrivaled coffee precision.
-               </p>
-
-               <button className="border-2 border-red-600 pt-2 pb-2 pr-4 pl-4 hover:text-white hover:bg-red-600 transition-colors">
-                  DISCOVER
-               </button>
+                  <p className="text-lg md:text-2xl">
+                     Master the perfect pour. <br />
+                     Unrestricted flow for unrivaled coffee precision.
+                  </p>
+               </div>
+               <div className="flex gap-10 items-center">
+                  <Link href="/collections/products">
+                     <button className="border-2 border-red-600 py-2 px-10 btn-effect">
+                        DISCOVER
+                     </button>
+                  </Link>
+                  <Link
+                     href="/products/baristan-electric-gooseneck/kettle"
+                     className="hover:text-red-600 duration-300"
+                  >
+                     <button className="flex items-center gap-2">
+                        SHOP
+                        <span className="text-red-600">
+                           <ChevronRightIcon />
+                        </span>
+                     </button>
+                  </Link>
+               </div>
             </div>
             <div className="bg-black h-full w-full col-span-1">
                <Image
@@ -112,12 +131,12 @@ export function Landing() {
          </div>
          <div className="hero h-[100vh] w-full flex items-end relative object-cover">
             <Video src="/videos/home-section-luna-big.mp4" />
-            <div className="pb-[30px] lg:pb-[100px] pl-6 lg:pl-10 space-y-6 absolute z-50 text-white">
+            <div className="pb-[30px] lg:pb-[100px] pl-6 lg:pl-10 flex flex-col gap-8 items-start absolute z-50 text-white">
                <div className="space-y-2">
                   <p className="text-6xl">Luna</p>
                   <p className="text-3xl">7 Pressets, Infinite Possibilities</p>
                </div>
-               <button className="border-2 pt-2 pb-2 pl-4 pr-4 border-red-500 bg-transparent text-white hover:bg-red-500 transition-[background] duration-400">
+               <button className="border-2 py-2 px-10 border-red-600 btn-effect">
                   EXPLORE
                </button>
             </div>
@@ -137,7 +156,7 @@ export function Landing() {
                   design.
                </p>
                <div>
-                  <button className="border-2 border-red-500  pt-2 pb-2 pr-4 pl-4  hover:text-red-600 hover:bg-white transition-colors">
+                  <button className="border-2 border-red-600 px-10 py-2 btn-effect">
                      DISCOVER
                   </button>
                   <button className="pt-2 pb-2 pr-4 pl-4 text-white">
