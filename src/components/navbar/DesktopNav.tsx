@@ -17,7 +17,7 @@ export default function DesktopNav() {
 
          <ul className="flex items-center gap-12">
             <Link
-               href="/collections"
+               href="/collections/products"
                className="transition-colors duration-400"
             >
                <li>Shop</li>
