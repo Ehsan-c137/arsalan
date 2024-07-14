@@ -99,7 +99,7 @@ export default function CollectionsFilter({
          </div>
          <div className="flex gap-10 pt-5 lg:pt-10 lg:min-w-[1228px] max-w-[1228px] ml-auto mr-auto">
             <div className="hidden lg:block">
-               <Filter />
+               <Filter isLayout={true} />
             </div>
 
             <div className="flex flex-col justify-center md:justify-center items-center md:items-start md:flow-row">
