@@ -5,6 +5,8 @@ import logoDark from "/public/arsalan-logo-dark.svg";
 import logo from "/public/arsalan-logo.png";
 import { usePathname, useRouter } from "next/navigation";
 import ShoppingCart from "@/assets/icons/shoppingCart";
+import ShopBadge from "@/assets/icons/shop-badge";
+import UserIcon from "@/assets/icons/userIcon";
 
 const headerShops = [
    {
@@ -50,7 +52,11 @@ export default function DesktopNav({ isHovered }: { isHovered: boolean }) {
    const router = useRouter();
 
    return (
-      <nav className="hidden lg:flex w-full justify-between items-center">
+      <nav
+         className={`hidden lg:flex w-full justify-between items-center ${
+            pathname === "/" ? "border-b-gray-300" : "border-b-transparent"
+         }`}
+      >
          <Link
             href="/"
             onClick={() => router.push("/")}
@@ -60,6 +66,16 @@ export default function DesktopNav({ isHovered }: { isHovered: boolean }) {
          </Link>
 
          <ul className="flex items-center gap-12 hover:text-black pointer-events-auto ">
+            <Link href="/last-chance">
+               <li
+                  className="hover:border-b-2 hover:!border-blue-400 py-8 text-red-600 flex items-center"
+                  style={{
+                     borderBottom: "1px solid transparent",
+                  }}
+               >
+                  <ShopBadge /> Last Chance
+               </li>
+            </Link>
             <Link
                style={{
                   borderBottom: "1px solid transparent",
@@ -116,6 +132,9 @@ export default function DesktopNav({ isHovered }: { isHovered: boolean }) {
             </Link>
             <Link href="/cart">
                <ShoppingCart />
+            </Link>
+            <Link href="/account">
+               <UserIcon />
             </Link>
          </ul>
       </nav>
