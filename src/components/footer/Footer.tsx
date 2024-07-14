@@ -1,6 +1,7 @@
 import Link from "next/link";
 import FacebookIcon from "@/assets/icons/FacebookIcon";
 import { convertToUrl } from "@/utils/convertToUrl";
+import ArrowRight from "@/assets/icons/arrow-right";
 
 const shopItem = [
    "Air Fryer",
@@ -25,10 +26,12 @@ const helpItems = [
    "Accessibility",
 ];
 
+const company = ["Our Story", "Blog", "Recipes"];
+
 export default function Footer() {
    return (
-      <footer className="w-full h-[100vh] bg-black p-12">
-         <nav>
+      <footer className="w-full h-[100vh] bg-black flex flex-col">
+         <nav className="px-12 pt-12 pb-0">
             <div className="grid grid-cols-1 lg:grid-cols-4 lg:justify-between gap-8 w-full">
                <div className="col-span-1">
                   <h4 className="text-white text-xl">
@@ -55,46 +58,152 @@ export default function Footer() {
                      </Link>
                   </div>
                </div>
-               <div className="flex flex-col col-span-1 gap-4">
-                  <h4 className="text-white font-semibold text-xl">Shop</h4>
-                  <div className="flex flex-col gap-4">
-                     {shopItem.map((item) => {
-                        const url = convertToUrl(item);
-                        return (
-                           <Link
-                              key={item}
-                              href={"/collections/air-fryer"}
-                              className="text-white text-md font-medium opacity-75 hover:opacity-100 hover:underline duration-500"
-                           >
-                              <p>{item}</p>
-                           </Link>
-                        );
-                     })}
+               <div className="col-span-1 flex flex-col gap-10">
+                  <div className="flex flex-col gap-4 ">
+                     <h4 className="text-white font-semibold text-xl">Shop</h4>
+                     <div className="flex flex-col gap-4">
+                        {shopItem.map((item) => {
+                           const url = convertToUrl(item);
+                           return (
+                              <Link
+                                 key={item}
+                                 href={`/collections/${url}`}
+                                 className="text-white text-md font-medium opacity-75 hover:opacity-100 hover:underline duration-500"
+                              >
+                                 <p>{item}</p>
+                              </Link>
+                           );
+                        })}
+                        <Link
+                           href={"/collections/products"}
+                           className="text-white text-md font-medium opacity-75 hover:opacity-100 hover:underline duration-500"
+                        >
+                           <p>Shop All</p>
+                        </Link>
+                     </div>
+                  </div>
+                  <div className="flex flex-col col-span-1 gap-4">
+                     <h4 className="text-white font-semibold text-xl">
+                        Company
+                     </h4>
+                     <div className="flex flex-col gap-4">
+                        {company.map((item) => {
+                           const url = convertToUrl(item);
+                           return (
+                              <Link
+                                 key={item}
+                                 href={`/${url}`}
+                                 className="text-white text-md font-medium opacity-75 hover:opacity-100 hover:underline duration-500"
+                              >
+                                 <p>{item}</p>
+                              </Link>
+                           );
+                        })}
+                     </div>
                   </div>
                </div>
-               <div className="flex flex-col lg:flex-row lg:gap-8 items-start lg:items-center gap-4">
-                  <Link
-                     href={"/collections"}
-                     className="text-white text-xl font-medium hover:opacity-75 duration-500"
-                  >
-                     shop
-                  </Link>
-                  <Link
-                     href={"/about-us"}
-                     className="text-white text-xl font-medium hover:opacity-75 duration-500"
-                  >
-                     About us
-                  </Link>
-                  <Link
-                     href={"/contact-us"}
-                     className="text-white text-xl font-medium hover:opacity-75 duration-500"
-                  >
-                     Contact us
-                  </Link>
+
+               <div className="flex flex-col col-span-1 gap-10">
+                  <div className="flex flex-col gap-4">
+                     <h4 className="text-white font-semibold text-xl">Help</h4>
+                     <div className="flex flex-col gap-4">
+                        {helpItems.map((item) => {
+                           const url = convertToUrl(item);
+                           return (
+                              <Link
+                                 key={item}
+                                 href={`/${url}`}
+                                 className="text-white text-md font-medium opacity-75 hover:opacity-100 hover:underline duration-500"
+                              >
+                                 <p>{item}</p>
+                              </Link>
+                           );
+                        })}
+                     </div>
+                  </div>
+                  <div className="flex flex-col col-span-1 gap-4">
+                     <h4 className="text-white font-semibold text-xl">
+                        Contact
+                     </h4>
+                     <div className="flex flex-col gap-4">
+                        <Link
+                           href={`mailto:support@saki.us`}
+                           className="text-white text-md font-medium opacity-75 hover:opacity-100 hover:underline duration-500"
+                        >
+                           <p>support@saki.us</p>
+                        </Link>
+                        <Link
+                           href={`/become-an-affiliate`}
+                           className="text-white text-md font-medium opacity-75 hover:opacity-100 hover:underline duration-500"
+                        >
+                           <p>Become an Affiliate</p>
+                        </Link>
+                        <Link
+                           href={`/wholesale`}
+                           className="text-white text-md font-medium opacity-75 hover:opacity-100 hover:underline duration-500"
+                        >
+                           <p>Wholesale</p>
+                        </Link>
+                     </div>
+                  </div>
                </div>
-               <div className="flex items-center gap-4"></div>
+
+               <div className="flex flex-col col-span-1 gap-4">
+                  <h4 className="text-white font-semibold text-xl">
+                     Get 10% Off On Your First Order
+                  </h4>
+                  <p className="text-white text-md font-medium opacity-75 hover:opacity-100 hover:underline duration-500">
+                     Join our mailing list and be the first to know about new
+                     products, special offers, and exclusive deals.
+                  </p>
+                  <div
+                     className="flex focus-within:!border-b-white items-center justify-between pr-5 pb-1 duration-300"
+                     style={{
+                        borderBottom: "1px solid gray",
+                        ["&:placeholder"]: {
+                           color: "gray",
+                        },
+                     }}
+                  >
+                     <input
+                        type="email"
+                        placeholder="Your email"
+                        style={{
+                           outline: "none",
+                           border: "none",
+                           padding: "10px",
+                           background: "transparent",
+                           color: "white",
+                        }}
+                     />
+                     <span className="w-2 h-2">
+                        <ArrowRight />
+                     </span>
+                  </div>
+               </div>
             </div>
          </nav>
+         <div className="p-4 text-center">
+            <p className="text-white text-md">
+               Terms + Conditions Privacy Policy Warranty
+            </p>
+            <p className="text-gray-400 text-sm">
+               *Free shipping on orders $50+ applies to locations within the
+               contiguous U.S. <br />, and excludes Hawaii, Alaska, and
+               destinations outside of the U.S. Click to view our Accessibility
+               Statement or contact us with accessibility-related questions.
+            </p>
+         </div>
+         <div
+            className="bg-[#1c1c1c] w-full px-6 py-6 text-gray"
+            style={{
+               borderTop: "1px solid #373737",
+            }}
+         >
+            <p className="text-gray-300 text-sm">
+               Copyright © 2024 SAKI. All rights reserved.
+            </p>
+         </div>
       </footer>
    );
 }
