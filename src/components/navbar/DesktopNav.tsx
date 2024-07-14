@@ -105,6 +105,11 @@ export default function DesktopNav({ isHovered }: { isHovered: boolean }) {
                            >
                               <Image
                                  src={item.img}
+                                 style={{
+                                    objectFit: "cover",
+                                    width: "150px",
+                                    height: "150px",
+                                 }}
                                  width={150}
                                  height={150}
                                  alt={item.title}
