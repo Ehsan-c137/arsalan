@@ -36,7 +36,7 @@ const company = ["Our Story", "Blog", "Recipes"];
 
 export default function Footer() {
    return (
-      <footer className="w-full h-[100vh] bg-black flex flex-col">
+      <footer className="w-full min-h-[100vh] bg-black flex flex-col">
          <nav className="px-12 pt-12 pb-0">
             <div className="grid grid-cols-1 lg:grid-cols-4 lg:justify-between gap-8 w-full">
                <div className="col-span-1 flex-col flex gap-10">
@@ -71,7 +71,7 @@ export default function Footer() {
                         <PinterestIcon />
                      </Link>
                   </div>
-                  <form className="text-white bg-[#3a384a] rounded-2xl py-2 px-4">
+                  {/* <form className="text-white bg-[#3a384a] rounded-2xl py-2 px-4">
                      <select name="cars" id="cars">
                         <option value="volvo">Volvo</option>
                         <option value="saab">Saab</option>
@@ -80,7 +80,7 @@ export default function Footer() {
                      </select>
 
                      <input type="submit" value="Submit" />
-                  </form>
+                  </form> */}
                </div>
                <div className="col-span-1 flex flex-col gap-10">
                   <div className="flex flex-col gap-4 ">
