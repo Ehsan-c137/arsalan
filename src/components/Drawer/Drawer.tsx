@@ -4,6 +4,7 @@ import { useDrawer } from "@/context/drawerContext";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Filter from "../filter/Filter";
+import Accordion from "../Accordion/Accordion";
 
 export default function DrawerComponent() {
    const { isOpen, setIsOpen } = useDrawer();
@@ -31,12 +32,66 @@ export default function DrawerComponent() {
                ) : (
                   <nav className="flex flex-col w-full justify-between text-black">
                      <ul className="flex flex-col gap-6">
+                        <Accordion heading="My Dashboard">
+                           <div className="flex flex-col">
+                              <Link
+                                 href="/rewards"
+                                 style={{
+                                    borderBottom: "1px solid gray",
+                                    width: "100%",
+                                 }}
+                                 className="border-b-1 border-gray-300 py-2"
+                              >
+                                 Rewards
+                              </Link>
+                              <Link
+                                 href="/rewards"
+                                 style={{
+                                    borderBottom: "1px solid gray",
+                                    width: "100%",
+                                 }}
+                                 className="border-b-1 border-gray-300 py-2"
+                              >
+                                 Products
+                              </Link>
+                              <Link
+                                 href="/rewards"
+                                 style={{
+                                    borderBottom: "1px solid gray",
+                                    width: "100%",
+                                 }}
+                                 className="border-b-1 border-gray-300 py-2"
+                              >
+                                 Support
+                              </Link>
+                              <Link
+                                 href="/rewards"
+                                 style={{
+                                    borderBottom: "1px solid gray",
+                                    width: "100%",
+                                 }}
+                                 className="border-b-1 border-gray-300 py-2"
+                              >
+                                 Orders
+                              </Link>
+                           </div>
+                        </Accordion>
                         <Link
                            onClick={() => setIsOpen(false)}
+                           style={{
+                              borderBottom: "1px solid gray",
+                              width: "100%",
+                           }}
+                           className="border-b-1 border-gray-300 py-2"
                            href="/collections"
-                           className="transition-colors duration-400"
                         >
                            <li>Shop</li>
+                        </Link>
+                        <Link href="/blog">
+                           <li>Blog</li>
+                        </Link>
+                        <Link href="/about">
+                           <li>About</li>
                         </Link>
                         <Link
                            onClick={() => setIsOpen(false)}
