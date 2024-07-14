@@ -49,6 +49,7 @@ export default function Filter() {
 
             return (
                <Accordion
+                  isLayout
                   key={item.heading}
                   heading={item.heading}
                   isLast={item.isLast}
