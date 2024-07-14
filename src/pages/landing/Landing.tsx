@@ -357,7 +357,7 @@ export function Landing() {
                </div>
                <div className="overflow-x-hidden flex gap-10">
                   <Link href="/blog">
-                     <div className="flex flex-col gap-4 bg-white rounded-xl p-4 w-[350px]">
+                     <div className="flex flex-col gap-4 bg-white hover:bg-white/75 duration-300 rounded-xl p-4 w-[350px]">
                         <Image
                            height={260}
                            width={350}
@@ -377,7 +377,7 @@ export function Landing() {
                      </div>
                   </Link>
                   <Link href="/blog">
-                     <div className="flex flex-col gap-4 bg-white rounded-xl p-4 w-[350px]">
+                     <div className="flex flex-col gap-4 bg-white hover:bg-white/75 duration-300 rounded-xl p-4 w-[350px]">
                         <Image
                            height={260}
                            width={350}
@@ -397,7 +397,7 @@ export function Landing() {
                      </div>
                   </Link>
                   <Link href="/blog">
-                     <div className="flex flex-col gap-4 bg-white rounded-xl p-4 w-[350px]">
+                     <div className="flex flex-col gap-4 bg-white hover:bg-white/75 duration-300 rounded-xl p-4 w-[350px]">
                         <Image
                            height={260}
                            width={350}
