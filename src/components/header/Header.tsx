@@ -12,19 +12,21 @@ export default function Header() {
    const pathname = usePathname();
    // change logo on hover
    const [isHovered, setIsHovered] = useState<boolean>(false);
-
+   const textstyle = isHovered
+      ? "text-black"
+      : pathname === "/"
+      ? "text-white"
+      : "text-black";
    return (
-      <div className="flex flex-col">
-         <header
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-            className={`w-full flex justify-between hover:bg-white items-center pointer-events-none ${
-               pathname === "/" ? "text-white" : "text-black"
-            } fixed top-0 px-6 z-50`}
-         >
-            <DesktopNav isHovered={isHovered} />
-            <MobileNav />
-         </header>
-      </div>
+      <header
+         onMouseEnter={() => setIsHovered(true)}
+         onMouseLeave={() => setIsHovered(false)}
+         className={`w-full flex justify-between hover:bg-white items-center pointer-events-none ${
+            isHovered ?? "!text-black"
+         } ${textstyle} fixed top-0 px-6 z-50`}
+      >
+         <DesktopNav isHovered={isHovered} />
+         <MobileNav />
+      </header>
    );
 }
