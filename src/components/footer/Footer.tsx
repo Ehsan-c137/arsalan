@@ -164,9 +164,6 @@ export default function Footer() {
                      className="flex focus-within:!border-b-white items-center justify-between pr-5 pb-1 duration-300"
                      style={{
                         borderBottom: "1px solid gray",
-                        ["&:placeholder"]: {
-                           color: "gray",
-                        },
                      }}
                   >
                      <input
