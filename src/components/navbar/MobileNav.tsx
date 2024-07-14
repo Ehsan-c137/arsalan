@@ -27,7 +27,7 @@ export default function MobileNav() {
 
    return (
       <>
-         <div className="flex justify-between items-center w-full lg:hidden py-4">
+         <nav className="flex justify-between items-center w-full lg:hidden py-4 pointer-events-auto">
             <div
                className="flex gap-4"
                onClick={() => setIsOpen((prev: boolean) => !prev)}
@@ -51,7 +51,7 @@ export default function MobileNav() {
             <Link href="/">
                <Image src={headerLogo} alt="logo" width={150} />
             </Link>
-         </div>
+         </nav>
       </>
    );
 }
