@@ -162,34 +162,49 @@ export default function Footer() {
                   </div>
                </div>
 
-               <div className="flex flex-col col-span-1 gap-4">
-                  <h4 className="text-white font-semibold text-xl">
-                     Get 10% Off On Your First Order
-                  </h4>
-                  <p className="text-white text-md font-medium opacity-75 hover:opacity-100 hover:underline duration-500">
-                     Join our mailing list and be the first to know about new
-                     products, special offers, and exclusive deals.
-                  </p>
-                  <div
-                     className="flex focus-within:!border-b-white items-center justify-between pr-5 pb-1 duration-300"
-                     style={{
-                        borderBottom: "1px solid gray",
-                     }}
-                  >
-                     <input
-                        type="email"
-                        placeholder="Your email"
+               <div className="flex flex-col col-span-1 gap-10">
+                  <div className="flex flex-col col-span-1 gap-4">
+                     <h4 className="text-white font-semibold text-xl">
+                        Get 10% Off On Your First Order
+                     </h4>
+                     <p className="text-white text-md font-medium opacity-75 hover:opacity-100 hover:underline duration-500">
+                        Join our mailing list and be the first to know about new
+                        products, special offers, and exclusive deals.
+                     </p>
+                     <div
+                        className="flex focus-within:!border-b-white items-center justify-between pr-5 pb-1 duration-300"
                         style={{
-                           outline: "none",
-                           border: "none",
-                           padding: "10px",
-                           background: "transparent",
-                           color: "white",
+                           borderBottom: "1px solid gray",
                         }}
-                     />
-                     <span className="w-2 h-2">
-                        <ArrowRight />
-                     </span>
+                     >
+                        <input
+                           type="email"
+                           placeholder="Your email"
+                           style={{
+                              outline: "none",
+                              border: "none",
+                              padding: "10px",
+                              background: "transparent",
+                              color: "white",
+                           }}
+                        />
+                        <span className="w-2 h-2">
+                           <ArrowRight />
+                        </span>
+                     </div>
+                  </div>
+                  {/*  */}
+                  <div className="flex flex-col col-span-1 gap-4">
+                     <p className="text-white text-xl">Latest Blog Article</p>
+                     <p className="text-white opacity-75 hover:underline">
+                        How Does Black Tea Benefit Your Heart?
+                     </p>
+                     <p className="text-white opacity-75 hover:underline">
+                        The Samovar in Turkish Culture: Tradition & Modernity
+                     </p>
+                     <p className="text-white opacity-75 hover:underline">
+                        What is Russian Samovar and How To Use It?
+                     </p>
                   </div>
                </div>
             </div>
