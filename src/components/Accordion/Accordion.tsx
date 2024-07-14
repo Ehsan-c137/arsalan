@@ -3,7 +3,7 @@
 import { useState } from "react";
 import PlusIcon from "@/assets/icons/plusIcon";
 import MinusIcon from "@/assets/icons/minusIcon";
-
+import ChevronDown from "@/assets/icons/chevron-down";
 interface IAccordion {
    children: React.ReactNode;
    isLast?: boolean;
@@ -43,10 +43,12 @@ export default function Accordion({
                      {!isLayout && (
                         <div
                            className={`${
-                              isOpen ? "rotate-45" : "rotate-0"
+                              isOpen ? "rotate-180" : "rotate-0"
                            } duration-300`}
                         >
-                           <PlusIcon />
+                           <div className="text-black">
+                              <ChevronDown />
+                           </div>
                         </div>
                      )}
                   </div>
