@@ -55,11 +55,14 @@ export default function Filter() {
                >
                   {item.children.map((child) => {
                      const itemUrl = `/collections/${item.heading.toLowerCase()}${
-                        child.href.endsWith("/") ? "" : "/"
+                        child.href.endsWith("/")
+                           ? child.href.slice(0, -1)
+                           : child.href
                      }`;
-                     console.log(itemUrl, pathname);
-                     const isAcitve = itemUrl === pathname;
 
+                     const isAcitve = itemUrl === pathname;
+                     console.log(isAcitve);
+                     console.log(itemUrl, pathname);
                      // const isAllProductSection =
                      //    "/collections/products" === pathname &&
                      //    child.name.toLowerCase() === "all";
