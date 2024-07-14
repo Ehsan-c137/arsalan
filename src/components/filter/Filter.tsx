@@ -38,7 +38,7 @@ const shopItems = [
    },
 ];
 
-export default function Filter() {
+export default function Filter({ isLayout }: { isLayout: boolean }) {
    const pathname = usePathname();
    const router = useRouter();
    const { isOpen, setIsOpen } = useDrawer();
@@ -49,7 +49,7 @@ export default function Filter() {
 
             return (
                <Accordion
-                  isLayout
+                  isLayout={isLayout}
                   key={item.heading}
                   heading={item.heading}
                   isLast={item.isLast}
