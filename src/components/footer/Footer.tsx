@@ -6,6 +6,8 @@ import Image from "next/image";
 import visa from "/public/images/visa.svg";
 import mastercard from "/public/images/mastercard.svg";
 import paypal from "/public/images/paypal.svg";
+import YoutubeIcon from "@/assets/icons/youtubeIcon";
+import PinterestIcon from "@/assets/icons/pinterest";
 
 const shopItem = [
    "Air Fryer",
@@ -37,14 +39,16 @@ export default function Footer() {
       <footer className="w-full h-[100vh] bg-black flex flex-col">
          <nav className="px-12 pt-12 pb-0">
             <div className="grid grid-cols-1 lg:grid-cols-4 lg:justify-between gap-8 w-full">
-               <div className="col-span-1">
-                  <h4 className="text-white text-xl">
-                     <span className="font-semibold">ARSALAN </span> <br />
-                  </h4>
-                  <p className="text-white text-xl font-light">
-                     Technology of coffee & <br /> tea
-                  </p>
-                  <div className="flex items-center space-between">
+               <div className="col-span-1 flex-col flex gap-10">
+                  <div>
+                     <h4 className="text-white text-xl">
+                        <span className="font-semibold">ARSALAN </span> <br />
+                     </h4>
+                     <p className="text-white text-xl font-light">
+                        Technology of coffee & <br /> tea
+                     </p>
+                  </div>
+                  <div className="flex items-center gap-4 space-between">
                      <Link href="instagram">
                         <svg
                            className="w-6 h-6"
@@ -59,6 +63,12 @@ export default function Footer() {
                      </Link>
                      <Link href={"/facebook"}>
                         <FacebookIcon />
+                     </Link>
+                     <Link href={"/youtube"}>
+                        <YoutubeIcon />
+                     </Link>
+                     <Link href={"/pinterest"}>
+                        <PinterestIcon />
                      </Link>
                   </div>
                </div>
