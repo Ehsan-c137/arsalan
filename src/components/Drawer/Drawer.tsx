@@ -28,7 +28,7 @@ export default function DrawerComponent() {
          >
             <div className="flex flex-col gap-4 md:hidden">
                {pathname?.startsWith("/collections") ? (
-                  <Filter />
+                  <Filter isLayout={false} />
                ) : (
                   <nav className="flex flex-col w-full justify-between text-black">
                      <ul className="flex flex-col gap-6">
