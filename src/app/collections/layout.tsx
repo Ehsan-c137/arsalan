@@ -40,24 +40,32 @@ const layoutHeader = [
       title: "SAKI products",
    },
    {
-      pathname: "/collections/air-fryers",
+      pathname: "/collections/products/air-fryers",
       title: "Smart Air Fryer & Oven, App-Controlled with Recipe Book",
    },
    {
-      pathname: "/collections/air-purifiers",
+      pathname: "/collections/products/air-purifiers",
       title: "HEPA H13 Air Purifier: Ultimate Filtration for Healthier Breathing",
    },
    {
-      pathname: "/collections/bread-makers",
+      pathname: "/collections/products/bread-makers",
       title: "Artisan Bread Maker 3 LB X-large with Ceramic Pan I SAKI Products",
    },
    {
-      pathname: "/collections/coffee-makers",
+      pathname: "/collections/products/coffee-makers",
       title: "Turkish Coffee Maker & Pour-Over Coffee Maker I SAKI Products",
    },
    {
-      pathname: "/collections/electric-kettles",
+      pathname: "/collections/products/electric-kettels",
       title: "Baristan Gooseneck Kettle & Luna Electric Tea Kettle Selection",
+   },
+   {
+      pathname: "/collections/products/samovars",
+      title: "Samovars",
+   },
+   {
+      title: "Turkish Tea Maker Collection | SAKI Products",
+      pathname: "/collections/tea-makers",
    },
 ];
 
@@ -68,6 +76,12 @@ export default function CollectionsFilter({
 }) {
    const pathname = usePathname();
    const { setIsOpen } = useDrawer();
+   layoutHeader.map((item) => {
+      console.log(item.pathname.toLowerCase() === pathname?.toLowerCase());
+   });
+   const p = layoutHeader.find((item) => item.pathname === pathname);
+
+   console.log(pathname);
 
    return (
       <div className="flex flex-col pt-16 lg:pt-28 min-h-[100vh]">
@@ -79,7 +93,8 @@ export default function CollectionsFilter({
             className="py-6 lg:py-12 flex justify-center border-[black] font-semibold text-2xl"
          >
             <p className="max-w-[1228px] pl-[30px] md:p-0 w-full ml-auto mr-auto">
-               {layoutHeader.find((item) => item.pathname === pathname)?.title}
+               {layoutHeader.find((item) => item.pathname === pathname)
+                  ?.title ?? "SAKI Produdct"}
             </p>
          </div>
          <div className="flex gap-10 pt-5 lg:pt-10 lg:min-w-[1228px] max-w-[1228px] ml-auto mr-auto">
