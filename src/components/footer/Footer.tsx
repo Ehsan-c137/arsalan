@@ -2,6 +2,10 @@ import Link from "next/link";
 import FacebookIcon from "@/assets/icons/FacebookIcon";
 import { convertToUrl } from "@/utils/convertToUrl";
 import ArrowRight from "@/assets/icons/arrow-right";
+import Image from "next/image";
+import visa from "/public/images/visa.svg";
+import mastercard from "/public/images/mastercard.svg";
+import paypal from "/public/images/paypal.svg";
 
 const shopItem = [
    "Air Fryer",
@@ -195,7 +199,7 @@ export default function Footer() {
             </p>
          </div>
          <div
-            className="bg-[#1c1c1c] w-full px-6 py-6 text-gray"
+            className="bg-[#1c1c1c] w-full px-6 py-6 text-gray flex items-center justify-between"
             style={{
                borderTop: "1px solid #373737",
             }}
@@ -203,6 +207,22 @@ export default function Footer() {
             <p className="text-gray-300 text-sm">
                Copyright © 2024 SAKI. All rights reserved.
             </p>
+            <div className="flex items-center">
+               <Link href={"/mastercard"}>
+                  <Image
+                     src={mastercard}
+                     width={80}
+                     height={60}
+                     alt="mastercard"
+                  />
+               </Link>
+               <Link href={"/paypal"}>
+                  <Image src={paypal} width={80} height={40} alt="paypal" />
+               </Link>
+               <Link href={"/visa"}>
+                  <Image src={visa} width={80} height={40} alt="mastercard" />
+               </Link>
+            </div>
          </div>
       </footer>
    );
