@@ -15,7 +15,7 @@ export default function Page(slug: pageProps) {
    return (
       <div className="flex flex-wrap justify-center md:justify-start gap-8">
          {products?.items.map((item) => {
-            const url = convertToUrl(item.title);
+            const url = convertToUrl(item.title).toLowerCase();
             // const url = item.title.replace(/ /g, "-").toLowerCase();
             return (
                <CollectionsItem
