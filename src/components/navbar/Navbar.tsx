@@ -3,7 +3,7 @@ import MobileNav from "./MobileNav";
 export default function Navbar() {
    return (
       <nav>
-         <DesktopNav />
+         {/* <DesktopNav /> */}
          <MobileNav />
       </nav>
    );
