@@ -104,7 +104,7 @@ export default function CollectionsFilter({
 
             <div className="flex flex-col justify-center md:justify-center items-center md:items-start md:flow-row">
                <button
-                  className="px-10 py-2 border-2 border-black lg:hidden max-w-[270px] w-full flex justify-center text-sm mb-5 "
+                  className="px-10 py-2 border-2 border-black text-black lg:hidden max-w-[270px] w-full flex justify-center text-sm mb-5 "
                   onClick={() => setIsOpen(true)}
                >
                   FILTER
