@@ -62,8 +62,7 @@ export default function Filter() {
                      }`;
 
                      const isAcitve = itemUrl === pathname;
-                     console.log(isAcitve);
-                     console.log(itemUrl, pathname);
+
                      // const isAllProductSection =
                      //    "/collections/products" === pathname &&
                      //    child.name.toLowerCase() === "all";
