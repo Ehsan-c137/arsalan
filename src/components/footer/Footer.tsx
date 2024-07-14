@@ -71,6 +71,16 @@ export default function Footer() {
                         <PinterestIcon />
                      </Link>
                   </div>
+                  <form className="text-white bg-[#3a384a] rounded-2xl py-2 px-4">
+                     <select name="cars" id="cars">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                        <option value="audi">Audi</option>
+                     </select>
+
+                     <input type="submit" value="Submit" />
+                  </form>
                </div>
                <div className="col-span-1 flex flex-col gap-10">
                   <div className="flex flex-col gap-4 ">
